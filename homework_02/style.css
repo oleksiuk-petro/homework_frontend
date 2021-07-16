@@ -1,0 +1,27 @@
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(Roboto-Regular.woff);
+}
+
+h1{
+    font-family: "Roboto-Regular";
+    color:black;
+}
+
+ol{
+    font-family: "Roboto-Regular";
+    color:blue;
+}
+
+ul{
+    color:black;
+}
+
+p{
+    font-family: "Roboto-Regular";
+    color:grey;
+}
+
+span{
+    color: red;
+}
