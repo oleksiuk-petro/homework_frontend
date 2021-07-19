@@ -3,25 +3,25 @@
     src: url(Roboto-Regular.woff);
 }
 
-h1{
+h1 {
     font-family: "Roboto-Regular";
-    color:black;
+    color: black;
 }
 
-ol{
+ol {
     font-family: "Roboto-Regular";
-    color:blue;
+    color: blue;
 }
 
-ul{
-    color:black;
+ul {
+    color: black;
 }
 
-p{
+p {
     font-family: "Roboto-Regular";
-    color:grey;
+    color: grey;
 }
 
-span{
+.specialcolor {
     color: red;
 }
