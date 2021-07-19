@@ -1,0 +1,50 @@
+/*властивості фону*/
+body {
+    background: url("bg.jpg");
+    background-size: cover;
+}
+
+/*шрифт першого заголовку*/
+@font-face {
+    font-family: 'Roboto Mono', monospace;
+    src: url(/fonts/RobotoMono-Bold.ttf);
+}
+
+/*шрифт підкреслених державоутворень*/
+@font-face {
+    font-family: 'SourceCodePro', monospace;
+    src: url(/fonts/SourceCodePro-Regular.ttf);
+}
+
+/*Властивості першого заголовку*/
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+
+
+/*клас визначає властивості слова "Львів"*/
+.specialfont1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 150%;
+    font-weight: 600;
+}
+
+
+/*клас визначає властивості підкреслених державоутворень*/
+.specialfont2 {
+    font-family: 'SourceCodePro', monospace;
+    letter-spacing: 3px;
+}
+
+
+/*Властивості другого заголовку*/
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/*клас визначає збільшення тексту (на всій веб-сторінці)*/
+.specialfont3{
+    font-size: 150%;
+}
