@@ -5,12 +5,12 @@ body {
 
 @font-face {
     font-family: 'Roboto Mono', monospace;
-    src: url(/fonts/RobotoMono-Bold.ttf);
+    src: url("./fonts/RobotoMono-Bold.ttf");
 }
 
 @font-face {
     font-family: 'SourceCodePro', monospace;
-    src: url(/fonts/SourceCodePro-Regular.ttf);
+    src: url("./fonts/SourceCodePro-Regular.ttf");
 }
 
 h1 {
