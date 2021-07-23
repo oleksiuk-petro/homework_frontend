@@ -1,0 +1,39 @@
+body {
+    background: url("../task2/images/bg.jpg");
+    background-size: cover;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: left;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.div-second {
+    display: block;
+    background: pink;
+    width: 50%;
+    height: min-content;
+    border-style: double;
+    position: relative;
+    float: right;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: blue;
+}
+
+.text-red {
+    color: red;
+    text-align: justify;
+}
+
+.text-purple {
+    color: purple;
+    font-style: italic;
+    font-size: 1.2em;
+}
