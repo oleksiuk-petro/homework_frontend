@@ -1,4 +1,4 @@
-ul li:nth-child(3n+7){
+strong {
     font-weight: bold;
     font-style: italic;
 }
