@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <form class="page-form">
+    <h2 class="page-form__headling">Create your account</h2>
+
+    <label for="first-name" class="page-form__label">
+      <span class="page-form__label-text">First Name</span>
+      <input name="first-name" type="text" class="page-form__input">
+    </label>
+
+    <label for="second-name" class="page-form__label">
+      <span class="page-form__label-text">Second Name</span>
+      <input name="second-name" type="text" class="page-form__input">
+    </label>
+
+    <label for="email" class="page-form__label">
+      <span class="page-form__label-text"> Email Address</span>
+      <input name="email" type="email" class="page-form__input">
+    </label>
+
+    <label class="page-form__label">
+      <span class="page-form__label-text">
+        <input type="radio" name="sex" class="page-form_radio">man
+        <input type="radio" name="sex" class="page-form_radio">women
+      </span>
+    </label>
+
+    <label class="page-form__label">
+      <span class="page-form__label-text">Position</span>
+      <select name="select" class="page-form_select" size="1">
+        <option>
+          <span class="page-form__label-text">Choose...</span>
+        </option>
+        <option>
+          <span class="page-form__label-text">Frontend</span>
+        </option>
+        <option>
+          <span class="page-form__label-text">Backend</span>
+        </option>
+        <option>
+          <span class="page-form__label-text">QC/QA</span>
+        </option>
+      </select>
+    </label>
+    
+    <label class="page-form__label">
+      <span class="page-form__label-text">
+        <input type="checkbox" class="page-form_checkbox">
+        I agree all statements in Therms of service
+      </span>
+    </label>
+      
+    <input type="submit" value="Sign Up" class="page-form_submit">
+  </form>
+</body>
+
+</html>

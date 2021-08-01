@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Inconsolata-Light';
+  src: url(../font/Inconsolata-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Inconsolata-SemiBold';
+  src: url(../font/Inconsolata-SemiBold.ttf);
+}
+
+.page-form {
+  width: 300px;
+  margin: 0 auto;
+  border: 2px solid gray;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 30px;
+ }
+
+.page-form__headling {
+  text-align: center;
+  background: green;
+  color: white;
+  padding-left: 10px 0;
+  margin: 0;
+  font-family: 'Inconsolata-SemiBold';
+}
+
+.page-form__label, 
+.page-form__label-text, 
+.page-form__input,
+.page-form_checkbox,
+.page-form_submit
+ {
+  display: block;
+}
+
+.page-form__input:focus {
+  outline: none;
+  box-shadow: 0 0 2px 2px blue;
+}
+
+.page-form_submit {
+  display: block;
+  background: green;
+  border-radius: 5px;
+  font-family: 'Inconsolata-SemiBold';
+}
