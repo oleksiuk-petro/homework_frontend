@@ -1,5 +1,46 @@
 section {
-    border: 1px double black;
-    background: whitesmoke;
-    padding: 10px;
+    outline: 1px double black;
+    background: cornsilk;
+    padding: 40px;
+    margin: 40px;
+    height: 240px;
+}
+
+div {
+    display: inline;
+    float: left;
+    /*outline: 1px solid black;*/
+    width: 20%;
+    height: 80px;
+    text-align: center;
+}
+
+.fa-check-circle {
+    color: green;
+}
+
+.fa-arrows-h {
+    color: black;
+}
+
+.fa-star {
+    color: blue;
+}
+
+p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+
+.first:hover {
+    color: red;
+}
+
+.second:hover {
+    color: orange;
+}
+
+.third:hover {
+    color: black;
 }
