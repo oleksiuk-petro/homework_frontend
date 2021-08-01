@@ -9,38 +9,43 @@ body {
     display: block;
 }
 
-.menu {
-    float: left;
-    height: 40px;
-    width: 20%;
-    background-color: yellow;
-    text-align: center;
-    padding-top: 15px;
-    outline: 1px solid black;
+.menu-item-ul {
+    padding: 0;
+    width: 100%;
 }
 
-h1 {
+.menu-item-li {
+    height: 40px;
+    width: 20%;
+    padding-top: 15px;
+    display: inline-table;
+    float: left;
+    text-align: center;
+    background-color: yellow;
+    outline:  1px solid black;
+}
+
+.title-big {
     color: black;
     text-align: center;
 }
 
-.image {
-    width: 450px;
-    height: auto;
-    float: left;
-    
+.title-middle {
+    color: blue;
+    text-align: left;
 }
 
-.ul-list {
+.general-image {
+    width: 450px;
+    height: auto;
+    float: left;  
+}
+
+.content {
     height: 220px;
     float: left;
     margin-left: 500px;
     text-align: left;
     font-style: italic;
     float: none;
-}
-
-h2 {
-    color: blue;
-    text-align: left;
 }
