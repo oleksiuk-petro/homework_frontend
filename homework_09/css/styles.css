@@ -1,0 +1,591 @@
+/*general styles*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "ArialBold";
+    src: url(../fonts/ArialBold.ttf);
+}
+
+@font-face {
+    font-family: "ArialRegular";
+    src: url(../fonts/ArialRegular.ttf);
+}
+
+a:hover, a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "ArialRegular";
+    background: #808080;
+    min-width: 320px;
+    color: rgb(92,100,110);
+    text-align: center;
+}
+
+/*header styles*/
+header .top-line {
+    background: rgb(48,54,64);
+}
+
+header .logo-box {
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 18px;
+    overflow: hidden;
+}
+
+header .logo {
+    font-family: "ArialBold";
+    font-size: 12px;
+    color: rgb(165,173,184);
+    float: left;
+    width: 70%;
+    text-align: left;
+}
+
+header .logo h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+header .logo h1::first-letter {
+    font-size: 30px;
+    color: rgb(174,75,93);
+}
+
+/*for "Search..."*/
+header .search-form {
+    width: 30%;
+    float: right;
+    outline: none;
+}
+
+header .search-form .submit-btn {
+    height: 35px;
+    min-width: 15%;
+    border-radius: 5px;
+    border-radius: 1px solid rgb(48,54,64);
+    background: rgb(174,75,93) url("../images/search.svg") no-repeat center;
+    text-indent: -99999px;
+    margin-left: 5px;
+}
+
+header .search-form .submit-btn:active {
+    background: rgb(232,95,76) url("../images/search.svg") no-repeat center;
+}
+
+input[type="submit"] {
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="search"] {
+    outline: none;
+    background: rgb(36,39,45);
+    min-width: 70%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid rgb(174,75,93);
+    font-family: "ArialRegular";
+    font-size: 14px;
+    color: #656f7a;
+    padding: 7px;
+}
+
+/*for "Eaten berry"*/
+header .content {
+    margin: 0 auto;
+    max-width: 980px;
+    overflow: hidden;
+}
+
+.cherry-slider .slide {
+    position: relative;
+    outline: none;
+}
+
+.cherry-slider .slide img {
+    display: block;
+    width: 100%;
+}
+
+.slide .text h2 {
+    font-family: "ArialBold";
+    font-size: 30px;
+    color: rgb(165,173,184);
+}
+
+.slide .text h3 {
+    font-family: "ArialBold";
+    font-size: 18px;
+    color: rgb(165,173,184);
+    margin-bottom: 10px;
+}
+
+.slide .text h2:first-letter {
+    font-family: "ArialBold";
+    font-size: 30px;
+    color: rgb(174,75,93);
+}
+
+.slide .text h2:after {
+    content: 'and go for a walk';
+    display: block;
+    font-family: "ArialBold";
+    font-size: 18px;
+    color: rgb(40,45,51);
+    margin-bottom: 15px;
+}
+
+.slide .text p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.cherry-slider .slide .text {
+    position: absolute;
+    width: 50%;
+    top: 10%;
+    text-align: left;
+    left: 5%;
+}
+
+/*basic menu styles*/
+.block-menu {
+    display: block;
+    text-align: right;
+    background: rgb(149,22,31);
+}
+
+.block-menu li {
+    display: inline-block;
+}
+
+.block-menu li a {
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+    font-family: "ArialBold";
+    -webkit-font-smoothing: antialiased;
+    text-transform: uppercase;
+    overflow: visible;
+    line-height: 20px;
+    font-size: 15px;
+    padding: 15px 20px;
+}
+
+header .crumbs {
+    background: rgb(243,243,243);
+    width: 100%;
+    text-align: left;
+}
+
+.crumbs .breadcrumbs {
+    font-family: "ArialRegular";
+    margin-left: 20px;
+    padding-bottom: 5px;
+}
+
+.crumbs .breadcrumbs li {
+    display: inline-block;
+}
+
+.crumbs .breadcrumbs li::before {
+    content: '/';
+    margin-left: 2px;
+    margin-right: 2px;
+    color: #808080;
+}
+
+.crumbs .breadcrumbs li:first-child::before {
+    content: '';
+}
+
+.crumbs .breadcrumbs li a {
+    font-size: 11px;
+    color: rgb(156,71,87);
+}
+
+.crumbs .breadcrumbs li a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs .current {
+    color: rgb(107,111,116);
+    font-size: 11px;
+}
+
+/*main styles*/
+main .main-content {
+    background: #ffffff;
+    margin: 0 auto;
+    max-width: 980px;
+    text-align: left;
+    overflow: hidden;
+}
+
+aside {
+    width: 25%;
+    margin-left: 23px;
+    margin-top: 25px;
+    float: left;
+}
+
+.data {
+    background: rgb(243,243,243);
+    width: 210px;
+    text-align: center;
+    border: 1px solid #c0c0c0;
+    margin-bottom: 30px;
+}
+
+.data h3 {
+    font-family: "ArialBold";
+    font-size: 18px;
+    color: #000000;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.sidebar-btn {
+    background: rgb(227,228,229);
+    width: 170px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #c0c0c0;
+    font-family: "ArialRegular";
+    font-size: 14px;
+    color: #656f7a;
+    padding: 7px;
+    margin-bottom: 15px;
+}
+
+select {
+    background: rgb(227,228,229);
+    width: 190px;
+    height: 35px;
+    border-radius: 5px;
+    font-family: "ArialRegular";
+    font-size: 14px;
+    color: #656f7a;
+    margin-bottom: 15px;
+}
+
+.submit-btn-forma {
+    margin-bottom: 30px;
+    font-family: "ArialRegular";
+    font-size: 16px;
+    color: #ffffff;
+    background: rgb(170,33,43);
+    border: 5px solid #ffffff;
+    height: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn-forma:active {
+    background: rgb(232, 95, 76);
+}
+
+.headline {
+    width: 210px;
+}
+
+.headline p {
+    font-family: "ArialRegular";
+    font-size: 12px;
+    padding-right: 5px;
+    line-height: 2;
+}
+
+.headline a {
+    font-family: "ArialRegular";
+    font-size: 12px;
+    color: rgb(170, 33, 43);
+    text-decoration: underline;
+}
+
+.headline h3 {
+    font-family: "ArialBold";
+    font-size: 18px;
+    color: #000000;
+}
+
+.inform-block {
+    width: 72%;
+    margin-top: 20px;
+    float: right;
+}
+
+/*for "What We Do..."*/
+.example-art {
+    float: left;
+    width: 100%;
+}
+
+.example-art h2 {
+    font-family: "ArialBold";
+    font-size: 24px;
+    color: rgb(165, 173, 184);
+    margin-bottom: 10px;
+}
+
+.example-art h2:first-letter {
+    color: rgb(174,75,93);
+}
+
+.example-art h3 {
+    font-family: "ArialBold";
+    font-size: 18px;
+    color: #000000;
+}
+
+.example-art p {
+    font-family: "ArialRegular";
+    font-size: 14px;
+    line-height: 2;
+}
+
+.example-art a {
+    font-family: "ArialRegular";
+    font-size: 14px;
+    color: rgb(170,33,43);
+    text-decoration: underline;
+}
+
+.image-bl {
+    float: left;
+    padding: 10px;
+}
+
+.image-bl img {
+    box-shadow: 5px 7px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+/*for "Lists"*/
+.list-art {
+    width: 100%;
+    float: left;
+}
+
+.list-prev {
+    width: 225px;
+    float: left;
+    margin-bottom: 30px;
+}
+
+.list-art h2 {
+    font-family: "ArialBold";
+    font-size: 24px;
+    color: rgb(165,173,184);
+    margin-bottom: 10px;
+}
+
+.list-art p {
+    font-family: "ArialRegular";
+    font-size: 20px;
+    color: rgb(92,100,110);
+}
+
+.list-art p span {
+    font-size: 12px;
+    background: rgb(222,222,222);
+}
+
+.list-art ul {
+    font-family: "ArialRegular";
+    font-size: 14px;
+    line-height: 2;
+    margin-left: 20px;
+}
+
+.list-art ol {
+    float: right;
+    font-family: "ArialRegular";
+    font-size: 14px;
+    line-height: 2;
+}
+
+.list-art h2:first-letter {
+    color: rgb(174,75,93);
+}
+
+.dot {
+    margin-left: 30px;
+    list-style-type: disc;
+}
+
+.unstyled {
+    list-style-type: none;
+}
+
+/*for "Table*/
+.table-art {
+    display: block;
+    float: left;
+    width: 95%;
+}
+
+.table-art h2 {
+    font-family: "ArialBold";
+    font-size: 24px;
+    color: rgb(165,173,184);
+    margin-bottom: 10px;
+}
+
+.table-art h2:first-letter {
+    color: rgb(174,75,93);
+}
+
+table tr {
+    background: black;
+    color: rgb(165,173,184);
+    font-family: "ArialRegular";
+    font-size: 12px;
+}
+
+table tr:nth-child(1) {
+    background: rgb(156,71,87);
+    font-family: "ArialRegular";
+    font-size: 12px;
+    color: #ffffff;
+}
+
+table tr:nth-child(1) th:first-child {
+    border-radius: 5px 0px 0px 0px;
+}
+
+table tr:nth-child(1) th:last-child {
+    border-radius: 0px 5px 0px 0px;
+}
+
+table tr:last-child td:first-child {
+    border-radius: 0px 0px 0px 5px;
+}
+
+table tr:last-child td:last-child {
+    border-radius: 0px 0px 5px 0px;
+}
+
+table tr a {
+    color: rgb(156,71,87);
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+table td, th {
+    height: 47px;
+}
+
+/*for footer*/
+footer {
+    background: rgb(48,54,64);
+    border-top: 20px solid rgb(156,71,87);
+    overflow: hidden;
+}
+
+.foot-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.foot-container section {
+    width: 235px;
+    float: left;
+    color: rgb(165,173,184);
+    font-family: "ArialRegular";
+    font-size: 12px;
+    line-height: 2;
+    padding-left: 5px;
+}
+
+.foot-container section a {
+    color: rgb(165,173,184);
+}
+
+.foot-container h3 {
+    border-bottom: 1px solid rgb(25,28,32);
+    width: 235px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: "ArialRegular";
+}
+
+/*for "CHERRY Hours"*/
+.hour-art {
+    margin-right: 50px;
+}
+
+.hour-art p {
+    border-top: 1px solid rgb(64,71,79);
+}
+
+.hour-art h3:first-letter {
+    color: rgb(174,75,93);
+}
+
+.hour-art ul {
+    list-style-image: url("../images/time.svg");
+    list-style-position: inside;
+}
+
+/*for "Local CHERRY"*/
+.city-art {
+    margin-right: 60px;
+}
+
+.city-art span {
+    color: rgb(174,75,93);
+}
+
+.city-art ul {
+    border-top: 1px solid rgb(64,71,79);
+}
+
+.city-art ul li a:hover {
+    text-decoration: underline;
+}
+
+.city-art p {
+    font-family: "ArialBold";
+    font-size: 14px;
+}
+
+.city-art p a:hover {
+    text-decoration: underline;
+}
+
+/*for "Our Los Angeles Location"*/
+.contact-art ul {
+    border-top: 1px solid rgb(64,71,79);
+    list-style-type: none;
+}
+
+.contact-art ul li a:hover {
+    text-decoration: underline;
+}
+
+.contact-art ul .cherry {
+    color: rgb(156,71,87);
+    text-decoration: underline;
+}
