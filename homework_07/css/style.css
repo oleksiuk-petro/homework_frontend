@@ -21,18 +21,36 @@
   text-align: center;
   background: green;
   color: white;
-  padding-left: 10px 0;
+  padding: 10px 0;
   margin: 0;
+  margin-bottom: 10px;
   font-family: 'Inconsolata-SemiBold';
+  font-size: 0.9em;
+}
+
+section {
+   width: 90%;
+   margin: 0 auto;
 }
 
 .page-form__label, 
-.page-form__label-text, 
 .page-form__input,
-.page-form_checkbox,
-.page-form_submit
- {
+.page-form__checkbox,
+.page-form__submit {
   display: block;
+}
+
+.page-form__label,  
+.page-form__input,
+.page-form__checkbox,
+.page-form__submit {
+  margin-bottom: 10px;
+}
+ 
+.page-form__input,
+.page-form__checkbox,
+.page-form__submit {
+  width: 100%;
 }
 
 .page-form__input:focus {
@@ -40,9 +58,32 @@
   box-shadow: 0 0 2px 2px blue;
 }
 
-.page-form_submit {
+.page-form__select {
+  width: 100%;
+}
+
+.page-form__submit {
   display: block;
   background: green;
   border-radius: 5px;
   font-family: 'Inconsolata-SemiBold';
+  margin-bottom: 10px;
+  padding: 5px 0;
+  color: white;
+}
+
+.page-form__label-text,
+.page-form__select,
+::placeholder {
+  font-family: 'Inconsolata-SemiBold';
+  font-size: 0.75em;
+  padding: 5px 0;
+}
+
+.page-form__radio {
+  float: left;
+}
+
+.page-form__label-text {
+  width: auto;
 }

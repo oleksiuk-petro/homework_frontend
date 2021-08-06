@@ -13,54 +13,62 @@
   <form class="page-form">
     <h2 class="page-form__headling">Create your account</h2>
 
-    <label for="first-name" class="page-form__label">
-      <span class="page-form__label-text">First Name</span>
-      <input name="first-name" type="text" class="page-form__input">
-    </label>
+    <section>
+      <label for="first-name" class="page-form__label">
+        <span class="page-form__label-text">First Name</span>
+        <input name="first-name" type="text" class="page-form__input" placeholder="type here...">
+      </label>
 
-    <label for="second-name" class="page-form__label">
-      <span class="page-form__label-text">Second Name</span>
-      <input name="second-name" type="text" class="page-form__input">
-    </label>
+      <label for="second-name" class="page-form__label">
+        <span class="page-form__label-text">Second Name</span>
+        <input name="second-name" type="text" class="page-form__input" placeholder="type here...">
+      </label>
 
-    <label for="email" class="page-form__label">
-      <span class="page-form__label-text"> Email Address</span>
-      <input name="email" type="email" class="page-form__input">
-    </label>
+      <label for="email" class="page-form__label">
+        <span class="page-form__label-text"> Email Address</span>
+        <input name="email" type="email" class="page-form__input"
+        placeholder="enter email">
+      </label>
 
-    <label class="page-form__label">
-      <span class="page-form__label-text">
-        <input type="radio" name="sex" class="page-form_radio">man
-        <input type="radio" name="sex" class="page-form_radio">women
-      </span>
-    </label>
+      <label class="page-form__label">
+        <input type="radio" name="sex" class="page-form__radio">
+        <span class="page-form__label-text">man</span>
+      </label>
+    
+      <label class="page-form__label">
+        <input type="radio" name="sex" class="page-form__radio">
+        <span class="page-form__label-text">women</span>
+      </label>
 
-    <label class="page-form__label">
-      <span class="page-form__label-text">Position</span>
-      <select name="select" class="page-form_select" size="1">
-        <option>
-          <span class="page-form__label-text">Choose...</span>
-        </option>
-        <option>
-          <span class="page-form__label-text">Frontend</span>
-        </option>
-        <option>
-          <span class="page-form__label-text">Backend</span>
-        </option>
+      <label class="page-form__label">
+        <span class="page-form__label-text">Position</span>
+        <select name="select" class="page-form__select" size="1">
+          <option>
+            <span class="page-form__label-text">Choose...</span>
+          </option>
+          <option>
+            <span class="page-form__label-text">Frontend</span>
+          </option>
+          <option>
+            <span class="page-form__label-text">Backend</span>
+          </option>
         <option>
           <span class="page-form__label-text">QC/QA</span>
         </option>
       </select>
-    </label>
+      </label>
     
-    <label class="page-form__label">
-      <span class="page-form__label-text">
-        <input type="checkbox" class="page-form_checkbox">
-        I agree all statements in Therms of service
-      </span>
-    </label>
+     
+      <input type="checkbox" class="page-form__checkbox">
+      <label class="page-form__label">  
+        <span class="page-form__label-text">
+          I agree all statements in Therms of service
+        </span>
+      </label>
       
-    <input type="submit" value="Sign Up" class="page-form_submit">
+      <input type="submit" value="Sign Up" class="page-form__submit">
+    </section>
+    
   </form>
 </body>
 
