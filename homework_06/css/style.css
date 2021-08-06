@@ -1,46 +1,59 @@
 section {
-    outline: 1px double black;
-    background: cornsilk;
-    padding: 40px;
-    margin: 40px;
-    height: 240px;
+    height: 400px;
+    width: 800px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px double black;
+    box-sizing: border-box;
+    padding: 60px;
 }
 
-div {
-    display: inline;
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    height: 100px;
     float: left;
-    /*outline: 1px solid black;*/
-    width: 20%;
-    height: 80px;
+    margin: 0;
+    padding: 0;
     text-align: center;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+p {
+    text-transform: uppercase;
 }
 
 .fa-check-circle {
-    color: green;
+    color: greenyellow;
+    font-size: 1.4em;
+}
+
+.first:hover .fa-check-circle {
+    color: red;
+    font-size: 1.4em;
 }
 
 .fa-arrows-h {
     color: black;
+    font-size: 1.4em;
+}
+
+.second:hover .fa-arrows-h {
+    color: orange;
 }
 
 .fa-star {
     color: blue;
 }
 
-p {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 0.7em;
-}
-
-.first:hover {
-    color: red;
-}
-
-.second:hover {
-    color: orange;
-}
-
-.third:hover {
+.third:hover .fa-star {
     color: black;
 }
