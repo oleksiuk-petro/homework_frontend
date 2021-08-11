@@ -8,68 +8,31 @@
   src: url(../font/Inconsolata-SemiBold.ttf);
 }
 
+/*properties of the whole form*/
 .page-form {
-  width: 300px;
+  width: 320px;
   margin: 0 auto;
+  margin-top: 20px;
   border: 2px solid gray;
   border-radius: 10px;
   overflow: hidden;
-  margin-bottom: 30px;
  }
 
+ /*form header properties*/
 .page-form__headling {
   text-align: center;
-  background: green;
+  background: seagreen;
   color: white;
   padding: 10px 0;
   margin: 0;
-  margin-bottom: 10px;
   font-family: 'Inconsolata-SemiBold';
   font-size: 0.9em;
 }
 
+/*properties of the block under the header*/
 section {
    width: 90%;
    margin: 0 auto;
-}
-
-.page-form__label, 
-.page-form__input,
-.page-form__checkbox,
-.page-form__submit {
-  display: block;
-}
-
-.page-form__label,  
-.page-form__input,
-.page-form__checkbox,
-.page-form__submit {
-  margin-bottom: 10px;
-}
- 
-.page-form__input,
-.page-form__checkbox,
-.page-form__submit {
-  width: 100%;
-}
-
-.page-form__input:focus {
-  outline: none;
-  box-shadow: 0 0 2px 2px blue;
-}
-
-.page-form__select {
-  width: 100%;
-}
-
-.page-form__submit {
-  display: block;
-  background: green;
-  border-radius: 5px;
-  font-family: 'Inconsolata-SemiBold';
-  margin-bottom: 10px;
-  padding: 5px 0;
-  color: white;
 }
 
 .page-form__label-text,
@@ -78,12 +41,58 @@ section {
   font-family: 'Inconsolata-SemiBold';
   font-size: 0.75em;
   padding: 5px 0;
+  margin: 5px 0;
 }
 
-.page-form__radio {
-  float: left;
+/*input frame shadow*/
+.page-form__input:focus {
+  outline: none;
+  box-shadow: 0 0 2px 2px blue;
 }
 
-.page-form__label-text {
-  width: auto;
+.page-form__input,
+.page-form__submit {
+  font-family: 'Inconsolata-Light';
+  display: block;
+  margin: 5px 0;
+}
+
+.page-form__label,  
+.page-form__input,
+.page-form__submit {
+  margin-bottom: 10px;
+}
+ 
+.page-form__input,
+.page-form__submit,
+.page-form__select {
+  width: 100%;
+}
+
+/*properties of the "Sign Up" submit button*/
+.page-form__submit {
+  background: lightgreen;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+  padding: 5px 0;
+  color: white;
+  cursor: pointer;
+}
+
+/*change the color of the "Sign Up" submit button*/
+.page-form__checkbox:checked ~ .page-form__submit {
+  background: darkgreen;
+}
+
+/*shadow of checkbox*/
+.page-form__checkbox:checked {
+  box-shadow: 0 0 2px 2px skyblue;
+}
+
+/*backdown before "Posotion"*/
+.clearfix::before {
+    content: "";
+    clear: both;
+    display: block;
 }
