@@ -1,0 +1,191 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*-----------------my work-------------------*/
+.head-text {
+    width: 100%;
+    margin: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.head-text__logo {
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: black;
+    font-size: 1.3em;
+    font-weight: 900;
+    padding: 10px 0;
+}
+
+.head-text__nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.head-text__nav-menu {
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    font-style: italic;
+
+    /*I have problem*/
+    /*vertical-align: middle;*/
+}
+
+.style-news {
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: darkred;
+    color: white;
+}
+
+.main-text {
+    width: 80%;
+    background: lightgray;
+    margin: 10px auto;
+    border-top: 3px double grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main-text__article {
+    background-color: white;
+    width: 40%;
+    margin: 10px;
+}
+
+section {
+    padding: 10px;
+}
+
+.main-text__article-italic {
+    font-style: italic;
+}
+
+h2, h3 {
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+p {
+    padding: 5px 0;
+}
+
+.for-image {
+    width: 100%;
+    height: auto;
+}
+
+.main-text__aside {
+    width: 25%;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.main-text__aside-dog {
+    background: white;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.main-text__aside-fruits {
+    background: white;
+    width: 90%;
+    margin-top: 10px;
+}
+
+.footer-text {
+    width: 80%;
+    margin: 0 auto;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-text__details {
+    width: 30%;
+    padding: 5px 0;
+}
+
+.footer-text__details h2 {
+    text-align: left;
+    font-size: 1.1em;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-text__ul {
+    color: darkgrey;
+}
+
+.footer-text__ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid darkgrey;
+    text-decoration: underline;
+}
+
+.footer-text__images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.footer-text__images img {
+    width: 20%;
+}
