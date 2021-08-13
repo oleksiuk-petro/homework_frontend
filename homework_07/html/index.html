@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>homework_07</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -13,31 +13,38 @@
   <form class="page-form">
     <h2 class="page-form__headling">Create your account</h2>
 
-    <section>
+    <section class="page-form__section">
       <label for="first-name" class="page-form__label">
         <span class="page-form__label-text">First Name</span>
-        <input name="first-name" type="text" class="page-form__input" placeholder="type here...">
+        <input name="first-name" type="text" class="page-form__input"
+          placeholder="type here...">
       </label>
 
       <label for="second-name" class="page-form__label">
         <span class="page-form__label-text">Second Name</span>
-        <input name="second-name" type="text" class="page-form__input" placeholder="type here...">
+        <input name="second-name" type="text" class="page-form__input"
+          placeholder="type here...">
       </label>
 
       <label for="email" class="page-form__label">
         <span class="page-form__label-text"> Email Address</span>
-        <input name="email" type="email" class="page-form__input" placeholder="enter email">
+        <input name="email" type="email" class="page-form__input"
+          placeholder="enter email">
       </label>
 
-      <label class="page-form__label">
-        <input type="radio" name="sex" class="page-form__radio">
-        <span class="page-form__label-text">man</span>
-      </label>
+      <div class="page-form__button-radio">
+        <label class="page-form__label">
+          <input type="radio" name="sex" checked>
+          <span class="false-span"></span> <!--for special shape of button-->
+          <span class="page-form__radio-text">man</span>
+        </label>
 
-      <label class="page-form__label">
-        <input type="radio" name="sex" class="page-form__radio">
-        <span class="page-form__label-text">women</span>
-      </label>
+        <label class="page-form__label">
+          <input type="radio" name="sex">
+          <span class="false-span"></span> <!--for special shape of button-->
+          <span class="page-form__radio-text">women</span>
+        </label>
+      </div>
 
       <label class="page-form__label">
         <span class="page-form__label-text clearfix">Position</span>

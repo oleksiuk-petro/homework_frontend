@@ -1,88 +1,118 @@
+/*font for "Create your account" and "man, woman"*/
 @font-face {
-  font-family: 'Inconsolata-Light';
-  src: url(../font/Inconsolata-Light.ttf);
+  font-family: "Tuff-Bold";
+  src: url("../font/Tuff-Bold.ttf");
 }
 
+/*font for "Sign Up"*/
 @font-face {
-  font-family: 'Inconsolata-SemiBold';
-  src: url(../font/Inconsolata-SemiBold.ttf);
+  font-family: "Noyh-SemiLight";
+  src: url("../font/Noyh-SemiLight.ttf");
+}
+
+/*font for others*/
+@font-face {
+  font-family: "Inconsolata-SemiBold";
+  src: url("../font/Inconsolata-SemiBold.ttf");
+}
+
+/*first setting*/
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /*properties of the whole form*/
 .page-form {
-  width: 320px;
+  width: 520px;
   margin: 0 auto;
-  margin-top: 20px;
-  border: 2px solid gray;
-  border-radius: 10px;
+  margin-top: 22px;
+  border: 2px solid rgb(201, 201, 201);
+  background-color: white;
+  border-radius: 8px;
   overflow: hidden;
- }
+}
 
- /*form header properties*/
+/*form header properties*/
 .page-form__headling {
+  height: 53px;
   text-align: center;
-  background: seagreen;
+  background: rgb(58, 156, 112);
   color: white;
-  padding: 10px 0;
-  margin: 0;
-  font-family: 'Inconsolata-SemiBold';
-  font-size: 0.9em;
+  padding-top: 20px;
+  font-family: 'Tuff-Bold';
+  font-size: 1.8em;
 }
 
 /*properties of the block under the header*/
-section {
-   width: 90%;
-   margin: 0 auto;
+.page-form__section {
+  margin: 0 18px;
+  margin-top: 30px;
 }
 
-.page-form__label-text,
+/*size of input and select*/
+.page-form__input,
+.page-form__select {
+  width: 100%;
+  height: 34px;
+}
+
+.page-form__label-text, 
 .page-form__select,
 ::placeholder {
-  font-family: 'Inconsolata-SemiBold';
-  font-size: 0.75em;
-  padding: 5px 0;
-  margin: 5px 0;
+  font-family: "Inconsolata-SemiBold";
+  font-size: 1.1em;
+}
+
+::placeholder {
+  padding-left: 10px;
+}
+
+.page-form__input,
+.page-form__select,
+.page-form__submit {
+  width: 100%;
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
+.page-form__input, 
+.page-form__submit {
+  font-family: "Noyh-SemiLight";
+}
+
+.page-form__button-radio {
+  margin-bottom: 28px;
+}
+
+.page-form__radio-text {
+  font-family: "Tuff-Bold";
+  font-size: 1.1em;
+  margin-right: 20px;
 }
 
 /*input frame shadow*/
 .page-form__input:focus {
   outline: none;
-  box-shadow: 0 0 2px 2px blue;
-}
-
-.page-form__input,
-.page-form__submit {
-  font-family: 'Inconsolata-Light';
-  display: block;
-  margin: 5px 0;
-}
-
-.page-form__label,  
-.page-form__input,
-.page-form__submit {
-  margin-bottom: 10px;
-}
- 
-.page-form__input,
-.page-form__submit,
-.page-form__select {
-  width: 100%;
+  box-shadow: 0 0 2px 2px rgb(179, 205, 232);
 }
 
 /*properties of the "Sign Up" submit button*/
 .page-form__submit {
-  background: lightgreen;
+  height: 45px;
+  background: rgb(109, 176, 129);
   border-radius: 5px;
   border: none;
-  margin-bottom: 10px;
-  padding: 5px 0;
+  margin-top: 14px;
+  margin-bottom: 23px;
   color: white;
+  font-size: 1.3em;
   cursor: pointer;
 }
 
 /*change the color of the "Sign Up" submit button*/
-.page-form__checkbox:checked ~ .page-form__submit {
-  background: darkgreen;
+.page-form__checkbox:checked~.page-form__submit {
+  background: rgb(38, 138, 70);
 }
 
 /*shadow of checkbox*/
@@ -90,9 +120,40 @@ section {
   box-shadow: 0 0 2px 2px skyblue;
 }
 
-/*backdown before "Posotion"*/
+/*backdown before "Position"*/
 .clearfix::before {
-    content: "";
-    clear: both;
-    display: block;
+  content: "";
+  clear: both;
+  display: block;
 }
+
+/*change styles of rudiobutton*/
+input[type=radio] {
+  display: none;
+}
+
+input[type=radio] + .false-span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px; 
+  height: 14px;
+  border-radius: 50%;
+}
+
+/*color of checking button*/
+input[type=radio]:checked + .false-span {
+  background-color: rgb(17,118,226);
+}
+
+/*add white point inside circle*/
+input[type=radio]:checked + .false-span::before { 
+  content: '';
+  position: absolute;
+  left: 3.5px;
+  top: 3.5px;
+  background: #fff;
+  width: 7px; 
+  height: 7px;
+  border-radius: 50%;
+ }
