@@ -48,67 +48,99 @@ table {
 }
 
 /*-----------------my work-------------------*/
+@font-face {
+    font-family: "AlphaEcho";
+    src: url("../fonts/alpha_echo.ttf");
+}
+
+@font-face {
+    font-family: "SourceSansPro";
+    font-style: italic;
+    src: url("../fonts/SourceSansPro-Italic.ttf");
+}
+
+@font-face {
+    font-family: "Hamburg-TS-ExtraLight";
+    src: url("../fonts/Hamburg-TS-ExtraLight.ttf");
+}
+
 .head-text {
     width: 100%;
-    margin: 10px;
-    background-color: white;
+    background-color: rgb(255,255,255);
     display: flex;
     flex-direction: column;
 }
 
 .head-text__logo {
-    width: auto;
-    height: auto;
+    font-family: "AlphaEcho";
+    color: rgb(37,33,34);
     text-align: center;
-    color: black;
-    font-size: 1.3em;
+    font-size: 1.8em;
     font-weight: 900;
-    padding: 10px 0;
+    margin-top: 90px;
+}
+
+.head-text__logo::first-letter {
+    font-size: 1.5em;
 }
 
 .head-text__nav {
     display: flex;
     flex-direction: row;
-    flex-wrap: none;
     justify-content: center;
-    padding: 10px 0;
+    margin-top: 50px;
+    height: 40px;
 }
 
 .head-text__nav-menu {
-    width: 80px;
-    height: 30px;
+    width: 108px;
+    height: 100%;
+    align-items: center;
     text-align: center;
-    font-style: italic;
-
-    /*I have problem*/
-    /*vertical-align: middle;*/
+    font-family: "SourceSansPro";
+    font-size: 17px;
 }
 
-.style-news {
+.head-text__nav-menu a {
+    text-decoration: none;
+    color: rgb(93,93,93);
+}
+
+.style-news a {
     border: 1px solid white;
     border-radius: 5px;
-    background-color: darkred;
+    background-color: rgb(204,0,68);
     color: white;
 }
 
+.head-line {
+    width: 100%;
+    height: 10px;
+    border-bottom: 1px solid rgb(198,198,198);
+    background-color: rgb(242,242,242);
+}
+
+
+/* main */
 .main-text {
-    width: 80%;
-    background: lightgray;
-    margin: 10px auto;
-    border-top: 3px double grey;
+    width: 100%;
+    background-color: rgb(242,242,242);
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
 
 .main-text__article {
     background-color: white;
-    width: 40%;
-    margin: 10px;
+    width: 760px;
+    height: min-content;
+    margin-right: 25px;
 }
 
-section {
-    padding: 10px;
+.main-text__article-container {
+    padding: 40px 28px;
 }
 
 .main-text__article-italic {
@@ -120,7 +152,8 @@ h2, h3 {
     padding: 10px 0;
 }
 
-p {
+section p {
+    font-family: "Hamburg-TS-ExtraLight";
     padding: 5px 0;
 }
 
@@ -130,37 +163,55 @@ p {
 }
 
 .main-text__aside {
-    width: 25%;
-    background-color: lightgrey;
+    width: 342px;
+    background-color: rgb(242,242,242);
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin-left: 25px;
 }
 
 .main-text__aside-dog {
     background: white;
-    width: 90%;
-    margin-bottom: 10px;
+    width: 100%;
+    margin-bottom: 25px;
 }
 
 .main-text__aside-fruits {
     background: white;
-    width: 90%;
-    margin-top: 10px;
+    width: 100%;
+    margin-top: 25px;
 }
 
+.main-text__aside-section {
+    margin: 28px 40px;
+}
+
+.aside-button {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(0,0,0);
+    color: white;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+/* footer */
 .footer-text {
-    width: 80%;
-    margin: 0 auto;
-    background-color: black;
+    width: 100%;
+    background-color: rgb(38,38,38);
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .footer-text__details {
-    width: 30%;
-    padding: 5px 0;
+    width: 332px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.footer-text__details:nth-child(3) {
+    width: 360px;
 }
 
 .footer-text__details h2 {
@@ -170,22 +221,52 @@ p {
     padding: 20px 0;
 }
 
-.footer-text__ul {
-    color: darkgrey;
+.divided li {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    
 }
 
-.footer-text__ul li {
-    padding: 10px 0;
-    border-bottom: 1px solid darkgrey;
-    text-decoration: underline;
+.divided a {
+    color: rgb(166,151,162);
 }
 
-.footer-text__images {
+.social {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
-.footer-text__images img {
-    width: 20%;
+.social img {
+    width: 50px;
+    height: auto;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact h3 {
+    color: white;
+    font-weight: 900;
+}
+
+.contact p,
+.contact a {
+    color: whitesmoke;
+}
+
+.contact li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.contact h3 {
+    width: 30%;
 }
