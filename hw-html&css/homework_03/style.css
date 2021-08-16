@@ -1,0 +1,42 @@
+body {
+    background: url("./images/bg.jpg");
+    background-size: cover;
+}
+
+@font-face {
+    font-family: 'Roboto Mono', monospace;
+    src: url("./fonts/RobotoMono-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'SourceCodePro', monospace;
+    src: url("./fonts/SourceCodePro-Regular.ttf");
+}
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.important-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+}
+
+.underlined-text {
+    font-family: 'SourceCodePro', monospace;
+    letter-spacing: 3px;
+    text-decoration: underline;
+}
+
+.big-letters{
+    font-size: 1.5em;
+}
+
+.line-through{
+    text-decoration: line-through;
+}

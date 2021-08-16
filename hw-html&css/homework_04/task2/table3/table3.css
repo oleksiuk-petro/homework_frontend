@@ -1,0 +1,21 @@
+.caption-text{
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+tr, th, td {
+    border: 1px solid black;
+    height: 50px;
+    text-align: center;
+}
+
+.table3 {
+    border: 1px solid black;
+    margin: auto;
+    width: 600px;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: yellow;
+}

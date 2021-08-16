@@ -1,0 +1,18 @@
+tr, td {
+    border: 1px solid black;
+    height: 30px;
+    width: 100%;
+}
+
+.table2 {
+    border: 1px solid black;
+    margin: auto;
+    width: 800px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background-color: yellow;
+}
+
+.color-column {
+    background-color: white;
+}
