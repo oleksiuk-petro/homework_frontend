@@ -27,9 +27,9 @@
   width: 520px;
   margin: 0 auto;
   margin-top: 22px;
-  border: 2px solid rgb(201, 201, 201);
-  background-color: white;
-  border-radius: 8px;
+  border: 2px solid rgb(102, 102, 102);
+  background-color: rgb(255,255,255);
+  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -38,23 +38,29 @@
   height: 53px;
   text-align: center;
   background: rgb(58, 156, 112);
-  color: white;
-  padding-top: 20px;
+  color: rgb(255,255,255);
+  padding-top: 16px;
   font-family: 'Tuff-Bold';
   font-size: 1.8em;
 }
 
 /*properties of the block under the header*/
 .page-form__section {
-  margin: 0 18px;
-  margin-top: 30px;
+  margin: 25px;
 }
 
 /*size of input and select*/
 .page-form__input,
 .page-form__select {
   width: 100%;
-  height: 34px;
+  height: 38px;
+  border: 1px solid rgb(204,204,204);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 22px;
+  padding-left: 12px;
+  color: rgb(102, 102, 102);
 }
 
 .page-form__label-text, 
@@ -62,18 +68,13 @@
 ::placeholder {
   font-family: "Inconsolata-SemiBold";
   font-size: 1.1em;
-}
-
-::placeholder {
-  padding-left: 10px;
+  font-weight: 400;
 }
 
 .page-form__input,
 .page-form__select,
 .page-form__submit {
   width: 100%;
-  margin-top: 13px;
-  margin-bottom: 13px;
 }
 
 .page-form__input, 
@@ -82,17 +83,23 @@
 }
 
 .page-form__button-radio {
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
 .page-form__radio-text {
   font-family: "Tuff-Bold";
   font-size: 1.1em;
+  margin-left: 6px;
   margin-right: 20px;
 }
 
+.page-form__checkbox {
+  margin-right: 8px;
+}
+
 /*input frame shadow*/
-.page-form__input:focus {
+.page-form__input:focus,
+.page-form__select:focus {
   outline: none;
   box-shadow: 0 0 2px 2px rgb(179, 205, 232);
 }
@@ -101,13 +108,12 @@
 .page-form__submit {
   height: 45px;
   background: rgb(109, 176, 129);
-  border-radius: 5px;
+  border-radius: 4px;
   border: none;
-  margin-top: 14px;
-  margin-bottom: 23px;
   color: white;
   font-size: 1.3em;
   cursor: pointer;
+  margin-top: 25px;
 }
 
 /*change the color of the "Sign Up" submit button*/
@@ -139,6 +145,7 @@ input[type=radio] + .false-span {
   width: 14px; 
   height: 14px;
   border-radius: 50%;
+  border: 0.5px solid rgb(102, 102, 102);
 }
 
 /*color of checking button*/
@@ -152,7 +159,7 @@ input[type=radio]:checked + .false-span::before {
   position: absolute;
   left: 3.5px;
   top: 3.5px;
-  background: #fff;
+  background: rgb(255,255,255);
   width: 7px; 
   height: 7px;
   border-radius: 50%;
