@@ -3,63 +3,80 @@
     padding: 0;
 }
 
-div {
-    height: 431px;
-    width: 858px;
-    margin-top: 155px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 6px double black;
-    box-sizing: border-box;
-    background-color: beige;
-    padding: 0 70px;
+@font-face {
+    font-family: "FiraCode-Regular";
+    src: url("../fonts/FiraCode-Regular.ttf");
 }
 
-ul {
+.rectangle {
+    height: 397px;
+    width: 806px;
+    margin-top: 141px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px double rgb(100,100,92);
+    box-sizing: border-box;
+    background-color: rgb(245,245,221);
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.row-rectangle {
     display: flex;
     width: 100%;
-    height: 143px;
+    height: 129px;
     justify-content: space-between;
     align-items: center;
     padding-left: 0;
 }
 
-li {
+.cell-row  {
+    width: min-content;
     float: left;
     text-align: center;
     list-style-type: none;
     cursor: pointer;
 }
 
-p {
+.title {
+    font-family: "FiraCode-Regular";
+    color: rgb(80,77,76);
     text-transform: uppercase;
+    font-size: 17px;
+    margin-top: 13px;
 }
 
-i {
-    font-size: 1.7em !important;
-    transition: 1.5s;
+.fa {
+    font-size: 23px;
+    transition: 0.25s;
+}
+
+.fa-fw {
+    width: 2px;
 }
 
 .fa-check-circle {
-    color: greenyellow;
+    color: rgb(109,194,94);
 }
 
 .first:hover .fa-check-circle {
-    color: red;
+    color: rgb(255,0,0);
 }
 
-.fa-arrows-h {
-    color: black;
+.fa-caret-right,
+.fa-caret-left {
+    color: rgb(0,0,0);
 }
 
-.second:hover .fa-arrows-h {
-    color: orange;
+.second:hover .fa-caret-right,
+.second:hover .fa-caret-left {
+    color: rgb(252,110,33);
 }
 
 .fa-star {
-    color: blue;
+    color: rgb(4,20,251);
 }
 
 .third:hover .fa-star {
-    color: black;
+    color: rgb(0,0,0);
 }
