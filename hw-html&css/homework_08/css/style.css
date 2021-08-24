@@ -1,13 +1,16 @@
 @font-face {
-    font-family: "Lemonada";
-    font-weight: 400;
-    src: url("../fonts/Lemonada-Regular.ttf");
+    font-family: "Teen";
+    src: url("../fonts/teen.ttf");
 }
 
 @font-face {
-    font-family: "Georama";
-    font-weight: 400;
-    src: url("../fonts/Georama-Regular.ttf");
+    font-family: "Rubic";
+    src: url("../fonts/Rubik-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.ttf");
 }
 
 * {
@@ -25,10 +28,15 @@ body {
     color: rgb(255, 255, 255);
 }
 
+p {
+    font-family: "Georama";
+    font-size: 0.8em;
+}
+
 .all {
     width: 640px;
     margin: 0 auto;
-    padding-top: 100px;
+    padding-top: 96px;
 }
 
 .upper-part {
@@ -41,21 +49,48 @@ body {
 }
 
 .left-information {
-    width: 200px;
+    width: 210px;
 }
 
-.main-title {
-    font-family: "Lemonada";
+.asia-holidays {
+    font-family: "Teen";
     text-transform: uppercase;
-    font-size: 1.355em;
+    letter-spacing: 3px;
+    font-size: 25px;
 }
 
-.about-travel {
+.fa-globe {
+    display: inline-flex;
+    width: 10px;
+    height: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+}
+
+.travel-asia {
+    font-family: "Rubic";
     text-align: center;
+    font-size: 9px;
+    margin-top: 5px;
+}
+
+.contact-us {
+    font-family: "Roboto";
+    text-align: left;
+    font-size: 11px;
+    margin-bottom: 5px;
 }
 
 .right-information {
-    width: 100px;
+    width: 89px;
+    padding-top: 15px;
+}
+
+.number-address {
+    font-family: "Rubic";
+    font-size: 8px;
+    list-style-type: none;
 }
 
 .container {
@@ -69,25 +104,26 @@ body {
     width: 100%;
     display: inline-flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
 }
 
 .element {
-    width: 200px;
+    width: 207px;
     height: min-content;
 }
 
 img {
     width: 100%;
-    height: 140px;
+    height: 143px;
     object-fit: cover;
     border: 3px solid whitesmoke;
     box-sizing: border-box;
 }
 
 .country-name {
-    font-family: "Georama";
+    font-family: "Roboto";
     text-align: center;
+    font-size: 12px;
 }
 
 .lower-part {
@@ -98,5 +134,7 @@ img {
 }
 
 .copyright {
+    font-family: "Roboto";
     text-align: center;
+    font-size: 9px;
 }
