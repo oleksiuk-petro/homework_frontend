@@ -1,0 +1,20 @@
+@media screen and (min-width: 1024px) and (max-width: 1170px) {
+    .main-text {
+        flex-direction: column-reverse;
+        
+    }
+
+    .main-text__article {
+        margin: 0 auto;
+    }
+
+    .main-text__aside {
+        flex-direction: row;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .footer-text {
+        flex-wrap: wrap;
+    }
+}

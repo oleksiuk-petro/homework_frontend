@@ -64,6 +64,7 @@ table {
     src: url("../fonts/Hamburg-TS-ExtraLight.ttf");
 }
 
+/* for "Dopetrope"*/
 .head-text {
     width: 100%;
     background-color: rgb(255,255,255);
@@ -75,7 +76,7 @@ table {
     font-family: "AlphaEcho";
     color: rgb(37,33,34);
     text-align: center;
-    font-size: 1.8em;
+    font-size: 36px;
     font-weight: 900;
     margin-top: 90px;
 }
@@ -84,32 +85,52 @@ table {
     font-size: 1.5em;
 }
 
+/* for "Home" "About us" ... */
 .head-text__nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 50px;
-    height: 40px;
+    margin-top: 48px;
 }
 
 .head-text__nav-menu {
-    width: 108px;
+    width: min-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     height: 100%;
     align-items: center;
     text-align: center;
     font-family: "SourceSansPro";
     font-size: 17px;
+    margin-bottom: 42px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.head-text__nav-menu:hover {
+    background-color: rgb(242,242,242);
+    border: none;
+    border-radius: 5px;
 }
 
 .head-text__nav-menu a {
     text-decoration: none;
-    color: rgb(93,93,93);
+    color: rgb(198,198,198);
+}
+
+.style-news {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(204,0,68);
+}
+
+.style-news:hover {
+    background-color: rgb(204,0,68);
 }
 
 .style-news a {
-    border: 1px solid white;
-    border-radius: 5px;
-    background-color: rgb(204,0,68);
     color: white;
 }
 
@@ -120,7 +141,6 @@ table {
     background-color: rgb(242,242,242);
 }
 
-
 /* main */
 .main-text {
     width: 100%;
@@ -128,33 +148,46 @@ table {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 50px;
+    padding-top: 29px;
+    font-size: 14px;
+}
+
+.main-text h2 {
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 22px;
+}
+
+.main-text h3 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 23px;
 }
 
 .main-text__article {
     background-color: white;
-    width: 760px;
+    width: 780px;
     height: min-content;
-    margin-right: 25px;
+    margin-right: 28px;
 }
 
 .main-text__article-container {
-    padding: 40px 28px;
+    padding-left: 28px;
+    padding-right: 28px;
 }
 
 .main-text__article-italic {
     font-style: italic;
-}
-
-h2, h3 {
-    font-weight: bold;
-    padding: 10px 0;
+    font-size: 23px;
+    padding-top: 0;
 }
 
 section p {
     font-family: "Hamburg-TS-ExtraLight";
-    padding: 5px 0;
+    padding-top: 7px;
+    padding-bottom: 38px;
+    line-height: 1.8;
 }
 
 .for-image {
@@ -163,44 +196,50 @@ section p {
 }
 
 .main-text__aside {
-    width: 342px;
+    width: 372px;
     background-color: rgb(242,242,242);
     display: flex;
     flex-direction: column;
-    margin-left: 25px;
+    margin-left: 28px;
 }
 
 .main-text__aside-dog {
     background: white;
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 }
 
 .main-text__aside-fruits {
     background: white;
     width: 100%;
-    margin-top: 25px;
+    margin-bottom: 50px;
 }
 
 .main-text__aside-section {
     margin: 28px 40px;
 }
 
+#fruit-links {
+    color: rgb(204,0,0);
+    font-size: 17px;
+}
+
 .aside-button {
     width: 200px;
-    height: 50px;
+    height: 51px;
     background-color: rgb(0,0,0);
-    color: white;
+    color: rgb(255,255,255);
     border-radius: 10px;
     margin-top: 40px;
+    font-size: 17px;
 }
 
 /* footer */
 .footer-text {
-    width: 100%;
     background-color: rgb(38,38,38);
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 
@@ -216,19 +255,25 @@ section p {
 
 .footer-text__details h2 {
     text-align: left;
-    font-size: 1.1em;
-    color: white;
-    padding: 20px 0;
+    font-size: 27px;
+    color: rgb(255,255,255);
+    padding-top: 43px;
+    padding-bottom: 25px;
 }
 
 .divided li {
-    padding: 20px 0;
-    border-bottom: 1px solid #ddd;
-    
+    padding-top: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;   
+}
+
+.divided li:last-child {
+    border-bottom: none;
 }
 
 .divided a {
-    color: rgb(166,151,162);
+    color: rgb(164,166,168);
+    font-size: 17px;
 }
 
 .social {
@@ -236,6 +281,8 @@ section p {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    margin-top: 23px;
+    margin-bottom: 23px;
 }
 
 .social img {
@@ -249,13 +296,15 @@ section p {
 }
 
 .contact h3 {
-    color: white;
+    width: 30%;
+    color: rgb(255,255,255);
     font-weight: 900;
+    font-size: 16px;
 }
 
 .contact p,
 .contact a {
-    color: whitesmoke;
+    color: rgb(77,77,77);
 }
 
 .contact li {
@@ -263,10 +312,7 @@ section p {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: left;
-    padding: 20px 0;
+    padding-top: 17px;
+    padding-bottom: 38px;
     border-bottom: 1px solid #ddd;
-}
-
-.contact h3 {
-    width: 30%;
 }
