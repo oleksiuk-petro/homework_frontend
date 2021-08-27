@@ -4,7 +4,7 @@
 
 let n = prompt('Write which number, where n >= 1!');
 if (n >= 1) {
-    summa = 0;
+    let summa = 0;
     for (i = 1; i <= n; i++) {
         summa = summa + i;
     } 

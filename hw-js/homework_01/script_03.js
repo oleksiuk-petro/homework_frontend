@@ -4,6 +4,6 @@
 let i = prompt('Write i = ');
 let j = prompt('Write j = ');
 let result = i * j;
-let k = null;
+let k;
 while (k != result)
     k = prompt(i + ' * ' + j + ' = ');
