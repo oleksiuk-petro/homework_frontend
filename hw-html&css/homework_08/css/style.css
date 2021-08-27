@@ -18,14 +18,16 @@
     padding: 0;
 }
 
-html, body {
-    height: 100%;
+html {
+    min-height: 100%;
+    position: relative;
 }
 
 body {
+    height: 100%;
     background: url("../images/asia.jpg");
     background-size: cover;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);  
 }
 
 p {
@@ -39,6 +41,7 @@ p {
     padding-top: 96px;
 }
 
+/*top*/
 .upper-part {
     display: flex;
     flex-direction: row;
@@ -93,6 +96,7 @@ p {
     list-style-type: none;
 }
 
+/*pictures*/
 .container {
     width: 100%;
     display: flex;
@@ -126,6 +130,7 @@ img {
     font-size: 12px;
 }
 
+/*footer*/
 .lower-part {
     position: absolute;
     bottom: 0;
