@@ -1,3 +1,47 @@
 @media screen and (min-width: 600px) and (max-width: 768px) {
-    
+    .head-navigation {
+        margin: 0;
+    }
+    .head-text__nav {
+        flex-direction: column;
+    }
+    .head-text__nav-menu {
+        width: 580px;
+        height: 100%;
+        font-family: "SourceSansPro";
+        font-size: 17px;
+        text-align: center;
+        font-weight: 800;
+        padding: 12px 0;
+        margin: 0 auto;
+    }
+    .head-line {
+        border-bottom: none;
+    }
+    .main-text {
+        flex-direction: column-reverse;
+    }
+    .main-text__aside {
+        width: auto;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .main-text__aside-dog {
+        width: 540px;
+        margin-bottom: 50px;
+    }
+    .main-text__aside-fruits {
+        width: 540px;
+        margin-bottom: 20px;
+    }
+    .main-text__article {
+        margin: 0 auto;
+        width: 540px;
+    }
+    .footer-text {
+        flex-direction: column;
+    }
+    .footer-text__details {
+        margin: 0 auto;
+    }
 }

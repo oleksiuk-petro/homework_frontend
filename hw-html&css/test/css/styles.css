@@ -3,19 +3,7 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -23,31 +11,37 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
+
 ol, ul {
     list-style: none;
 }
+
 blockquote, q {
     quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before, blockquote:after, q:before, q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
 /*-----------------my work-------------------*/
+
 @font-face {
     font-family: "AlphaEcho";
     src: url("../fonts/alpha_echo.ttf");
@@ -65,16 +59,17 @@ table {
 }
 
 /* for "Dopetrope"*/
+
 .head-text {
     width: 100%;
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
 }
 
 .head-text__logo {
     font-family: "AlphaEcho";
-    color: rgb(37,33,34);
+    color: rgb(37, 33, 34);
     text-align: center;
     font-size: 36px;
     font-weight: 900;
@@ -86,48 +81,47 @@ table {
 }
 
 /* for "Home" "About us" ... */
+
+.head-navigation {
+    margin-top: 48px;
+    margin-bottom: 42px;
+}
+
 .head-text__nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 48px;
 }
 
 .head-text__nav-menu {
     width: min-content;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 12px;
-    padding-bottom: 12px;
     height: 100%;
-    align-items: center;
-    text-align: center;
     font-family: "SourceSansPro";
     font-size: 17px;
-    margin-bottom: 42px;
+    padding: 12px 20px;
     margin-left: 20px;
     margin-right: 20px;
 }
 
 .head-text__nav-menu:hover {
-    background-color: rgb(242,242,242);
+    background-color: rgb(242, 242, 242);
     border: none;
     border-radius: 5px;
 }
 
 .head-text__nav-menu a {
     text-decoration: none;
-    color: rgb(198,198,198);
+    color: rgb(198, 198, 198);
 }
 
 .style-news {
     border: none;
     border-radius: 5px;
-    background-color: rgb(204,0,68);
+    background-color: rgb(204, 0, 68);
 }
 
 .style-news:hover {
-    background-color: rgb(204,0,68);
+    background-color: rgb(204, 0, 68);
 }
 
 .style-news a {
@@ -137,19 +131,20 @@ table {
 .head-line {
     width: 100%;
     height: 10px;
-    border-bottom: 1px solid rgb(198,198,198);
-    background-color: rgb(242,242,242);
+    border-bottom: 1px solid rgb(198, 198, 198);
+    background-color: rgb(242, 242, 242);
 }
 
 /* main */
+
 .main-text {
     width: 100%;
-    background-color: rgb(242,242,242);
+    background-color: rgb(242, 242, 242);
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 29px;
     font-size: 14px;
+    padding-top: 30px;
 }
 
 .main-text h2 {
@@ -166,9 +161,9 @@ table {
 }
 
 .main-text__article {
-    background-color: white;
     width: 780px;
     height: min-content;
+    background-color: rgb(255, 255, 255);
     margin-right: 28px;
 }
 
@@ -185,9 +180,9 @@ table {
 
 section p {
     font-family: "Hamburg-TS-ExtraLight";
+    line-height: 1.8;
     padding-top: 7px;
     padding-bottom: 38px;
-    line-height: 1.8;
 }
 
 .for-image {
@@ -197,21 +192,21 @@ section p {
 
 .main-text__aside {
     width: 372px;
-    background-color: rgb(242,242,242);
+    background-color: rgb(242, 242, 242);
     display: flex;
     flex-direction: column;
     margin-left: 28px;
 }
 
 .main-text__aside-dog {
-    background: white;
     width: 100%;
+    background: rgb(255, 255, 255);
     margin-bottom: 50px;
 }
 
 .main-text__aside-fruits {
-    background: white;
     width: 100%;
+    background: rgb(255, 255, 255);
     margin-bottom: 50px;
 }
 
@@ -220,23 +215,24 @@ section p {
 }
 
 #fruit-links {
-    color: rgb(204,0,0);
+    color: rgb(204, 0, 0);
     font-size: 17px;
 }
 
 .aside-button {
     width: 200px;
     height: 51px;
-    background-color: rgb(0,0,0);
-    color: rgb(255,255,255);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     border-radius: 10px;
-    margin-top: 40px;
     font-size: 17px;
+    margin-top: 40px;
 }
 
 /* footer */
+
 .footer-text {
-    background-color: rgb(38,38,38);
+    background-color: rgb(38, 38, 38);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -244,27 +240,27 @@ section p {
 }
 
 .footer-text__details {
-    width: 332px;
-    margin-left: 25px;
-    margin-right: 25px;
+    width: 340px;
+    margin-left: 39px;
+    margin-right: 39px;
 }
 
 .footer-text__details:nth-child(3) {
-    width: 360px;
+    width: 366px;
 }
 
 .footer-text__details h2 {
     text-align: left;
     font-size: 27px;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     padding-top: 43px;
     padding-bottom: 25px;
 }
 
 .divided li {
+    border-bottom: 1px solid rgb(164, 166, 168);
     padding-top: 25px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #ddd;   
 }
 
 .divided li:last-child {
@@ -272,8 +268,8 @@ section p {
 }
 
 .divided a {
-    color: rgb(164,166,168);
     font-size: 17px;
+    color: rgb(164, 166, 168);
 }
 
 .social {
@@ -297,14 +293,13 @@ section p {
 
 .contact h3 {
     width: 30%;
-    color: rgb(255,255,255);
     font-weight: 900;
     font-size: 16px;
+    color: rgb(255, 255, 255);
 }
 
-.contact p,
-.contact a {
-    color: rgb(77,77,77);
+.contact p, .contact a {
+    color: rgb(77, 77, 77);
 }
 
 .contact li {
@@ -312,7 +307,7 @@ section p {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: left;
+    border-bottom: 1px solid rgb(164, 166, 168);
     padding-top: 17px;
     padding-bottom: 38px;
-    border-bottom: 1px solid #ddd;
 }

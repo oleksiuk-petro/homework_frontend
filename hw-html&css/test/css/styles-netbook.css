@@ -1,19 +1,29 @@
 @media screen and (min-width: 1024px) and (max-width: 1170px) {
+    .head-line {
+        border-bottom: none;
+    }
     .main-text {
         flex-direction: column-reverse;
-        
     }
-
-    .main-text__article {
-        margin: 0 auto;
-    }
-
     .main-text__aside {
+        width: auto;
         flex-direction: row;
         margin: 0 auto;
+    }
+    .main-text__aside-dog {
+        width: 470px;
+        margin-right: 10px;
         margin-bottom: 20px;
     }
-
+    .main-text__aside-fruits {
+        width: 470px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+    .main-text__article {
+        margin: 0 auto;
+        width: 820px;
+    }
     .footer-text {
         flex-wrap: wrap;
     }
