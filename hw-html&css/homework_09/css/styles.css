@@ -504,9 +504,9 @@ footer {
 }
 
 .foot-container {
-    width: 80%;
     margin: 0 auto;
     text-align: left;
+    width: 905px;
 }
 
 .foot-container section {
@@ -533,7 +533,7 @@ footer {
 
 /*for "CHERRY Hours"*/
 .hour-art {
-    margin-right: 50px;
+    margin-right: 25px;
 }
 
 .hour-art p {
@@ -551,7 +551,8 @@ footer {
 
 /*for "Local CHERRY"*/
 .city-art {
-    margin-right: 60px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .city-art span {
@@ -560,6 +561,10 @@ footer {
 
 .city-art ul {
     border-top: 1px solid rgb(64,71,79);
+}
+
+.city-art ul li::marker {
+    color: rgb(156,71,87);
 }
 
 .city-art ul li a:hover {
@@ -576,6 +581,10 @@ footer {
 }
 
 /*for "Our Los Angeles Location"*/
+.contact-art {
+    margin-left: 25px;
+}
+
 .contact-art ul {
     border-top: 1px solid rgb(64,71,79);
     list-style-type: none;
