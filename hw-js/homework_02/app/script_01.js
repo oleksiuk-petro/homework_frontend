@@ -6,11 +6,15 @@
         ● Видаліть властивість name з об'єкта.
 */
 
-/*creating a new object*/
+/*creating a new empty object*/
 var user = {
-    name: 'ПИЛИП',
-    surname: 'ШЕВЧЕНКО'
 };
+
+/*add property 'name'*/
+user.name = 'ПИЛИП';
+
+/*add property 'surname'*/
+user.surname = 'ШЕВЧЕНКО';
 
 /*output values of 'user'*/
 console.log('beginning');
@@ -27,8 +31,8 @@ for (var key in user) {
     console.log('Ключ: ' + key + '. Значення: ' + user[key]);
 }
 
-/*delete property 'surname' of object 'user'*/
-delete user.surname;
+/*delete property 'name' of object 'user'*/
+delete user.name;
 
 /*output values of 'user'*/
 console.log('\nafter deleting');
