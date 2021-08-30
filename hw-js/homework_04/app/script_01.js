@@ -3,10 +3,11 @@
         а) від найменшого до найбільшого;
         б) від найбільшого до найменшого.
 */
-/*created an empty array*/
+
+/* created an empty array */
 var arr = [];
 
-/*write n random numbers [min;max]* inside array*/
+/* write n random numbers [min;max]* inside array */
 let min = -50;
 let max = 50;
 let n = 20;
@@ -18,10 +19,10 @@ for (i = 0; i < n; i++) {
 }
 console.log(arr); //showin array’s elements
 
-/*sorting from the lowest to the biggest*/
+/* sorting from the lowest to the biggest */
 arr.sort((a,b) => (a - b));
 console.log(arr);
 
-/*sorting from the biggest to the lowest*/
+/* sorting from the biggest to the lowest */
 arr.sort((a,b) => (b - a));
 console.log(arr);

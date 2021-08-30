@@ -9,7 +9,7 @@
         Пункти a,б,в - мають бути реалізованими через ФУНКЦІЇ.
 */
 
-/*creating array with objects*/
+/* creating array with objects */
 var classroom = [
     { age: 26, groupName: 'Java' },
     { age: 18, groupName: 'Front-end' },
@@ -24,7 +24,7 @@ var classroom = [
 ];
 console.log(classroom);
 
-/*a) creating array with only groupName*/
+/* a) creating array with only groupName */
 function creatingNewArray(classroom) {
     let arrGroupName = [];
     for (i = 0; i < classroom.length; i++) {
@@ -34,7 +34,7 @@ function creatingNewArray(classroom) {
 }
 creatingNewArray(classroom);
 
-/*б) calculating total age all students*/
+/* б) calculating total age all students */
 function totalAge(classroom) {
     let summaAge = 0;
     for (i = 0; i < classroom.length; i++) {
@@ -44,7 +44,7 @@ function totalAge(classroom) {
 }
 totalAge(classroom);
 
-/*в) detecting juvenile students*/
+/* в) detecting juvenile students */
 function juvenileStudents(classroom) {
     let meaning = false;
     let k = 0;
