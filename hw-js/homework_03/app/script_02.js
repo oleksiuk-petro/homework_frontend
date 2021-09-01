@@ -3,7 +3,7 @@
 */
 
 /*crating new array*/
-var styles = ['Джаз', 'Блюз'];
+let styles = ['Джаз', 'Блюз'];
 console.log(styles);
 
 /*adding last element*/

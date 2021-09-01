@@ -3,7 +3,7 @@
 */
 
 /* crating new array */
-var styles = ['Джаз', 'Блюз'];
+let styles = ['Джаз', 'Блюз'];
 
 /* adding last element */
 styles.push('Рок-н-Ролл');

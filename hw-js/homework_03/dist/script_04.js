@@ -3,12 +3,12 @@
 */
 
 /* creating new array */
-var array = [-9, -18, -1, -3, -5, 0, -3, 10, -1, 0, 1, 2, 11, 4, 5, 6];
+let array = [-9, -18, -1, -3, -5, 0, -3, 10, -1, 0, 1, 2, 11, 4, 5, 6];
 
 /* creating a new function */
 function filterRange(array, a, b) {
     let massif = [];
-    for (i = 0; i < array.length; i++) {
+    for (let i = 0; i < array.length; i++) {
         if ((array[i] >= a) && (array[i] <= b))
             massif.push(array[i]);
     }

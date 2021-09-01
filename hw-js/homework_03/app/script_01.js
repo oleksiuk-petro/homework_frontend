@@ -3,7 +3,7 @@
     Напишіть код для отримання останнього елемента products.
 */
 
-var products = ['phone', 'book', 'pen', 'knife', 'dog',
+let products = ['phone', 'book', 'pen', 'knife', 'dog',
     'rabbit', 'apple', 'diary', 'plant', 'lion', 'tiger'];
 console.log(products);
 
