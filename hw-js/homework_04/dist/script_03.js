@@ -10,7 +10,8 @@
 */
 
 /* creating array with objects */
-var classroom = [
+
+let classroom = [
     { age: 26, groupName: 'Java' },
     { age: 18, groupName: 'Front-end' },
     { age: 17, groupName: 'Python' },
@@ -24,38 +25,30 @@ var classroom = [
 ];
 
 /* a) creating array with only groupName */
-function creatingNewArray(classroom) {
-    let arrGroupName = [];
-    for (i = 0; i < classroom.length; i++) {
-        arrGroupName.push(classroom[i].groupName);
-    }
-}
-creatingNewArray(classroom);
+
+let arrGroupName = classroom.map(function (name) {
+    return name.groupName;
+});
 
 /* б) calculating total age all students */
-function totalAge(classroom) {
-    let summaAge = 0;
-    for (i = 0; i < classroom.length; i++) {
-        summaAge += classroom[i].age;
-    }
-}
-totalAge(classroom);
+
+// creating array of ages
+let classroomAge = classroom.map(function (name) {
+    return name.age;
+});
+
+// calculating total age
+let totalAge = classroomAge.reduce(function (sum, current) {
+    return sum + current;
+});
 
 /* в) detecting juvenile students */
-function juvenileStudents(classroom) {
-    let meaning = false;
-    let k = 0;
-    while (k < classroom.length) {
-        if (classroom[k].age < 18) {
-            meaning = true;
-            break;
-        }
-        k++;
-    }
-    if (meaning)
-        console.log('В класі є неповнолітні!');
-    else
-        console.log('В класі всі дорослі!');
-}
-juvenileStudents(classroom);
 
+function isJuvenile(number) {
+    return number < 18;
+}
+let juvenileStudents = classroomAge.some(isJuvenile);
+if (juvenileStudents)
+    console.log('В класі є неповнолітні студенти!');
+else
+    console.log('В класі всі дорослі!');
