@@ -6,18 +6,18 @@
         ● Видаліть властивість name з об'єкта.
 */
 
-/*creating a new empty object*/
-var user = {
+/* creating a new empty object */
+let user = {
 };
 
-/*add property 'name'*/
+/* add property 'name' */
 user.name = 'ПИЛИП';
 
-/*add property 'surname'*/
+/* add property 'surname' */
 user.surname = 'ШЕВЧЕНКО';
 
-/*change the value of 'name'*/
+/* change the value of 'name' */
 user.name = 'СЕРГІЙ';
 
-/*delete property 'name' of object 'user'*/
+/* delete property 'name' of object 'user' */
 delete user.name;
