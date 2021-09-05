@@ -9,3 +9,15 @@
         б) у згорнутому вигляді
             - Університет
 */
+
+let span = document.getElementById('spa');
+let ul = span.nextSibling.nextSibling;
+span.onclick = function () {
+    if (span.classList.contains('menu') == false) {
+        span.classList.add('menu');
+        ul.style.display = 'block';
+    } else {
+        span.classList.remove('menu');
+        ul.style.display = 'none';
+    }
+}
