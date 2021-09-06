@@ -7,3 +7,63 @@
         ● ondoubleclick
         ● onfocus
  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework_08</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--------------------------------------------------------------->
+    <p>Event for onscroll:</p>
+    <div id="forOnscroll" onscroll="functionForOnscroll()">Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Quasi maxime cupiditate, provident ex
+        dicta corrupti hic voluptas accusamus nam. Voluptate deserunt modi
+        reprehenderit veniam quas. Consequatur illo, dolor reprehenderit
+        molestiae obcaecati, earum sint sunt neque quam, animi illum magnam
+        eligendi repellat eos! Numquam similique quis reprehenderit vel? Enim,
+        sequi recusandae? Blanditiis hic sunt pariatur aut magnam praesentium
+        quis libero rerum ipsum iste quas excepturi similique sit mollitia
+        necessitatibus dolores, voluptatum, facilis minima deleniti nihil.
+        Dolorum labore numquam non eos! Itaque nihil vitae adipisci veniam! Odit
+        vero, laudantium quo repellendus quam in non officiis blanditiis dicta
+        libero tempora dolorum. Itaque, veniam?</div>
+    <hr>
+    <!--------------------------------------------------------------->
+    <p>Event for onsubmit:</p>
+    <form onsubmit="functionForOnsubmit()">
+        Enter which text:
+        <input type="text" name="fname">
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+    <!--------------------------------------------------------------->
+    <p>Event for onreset:</p>
+    <form onreset="functionForOnreset()">
+        Enter which text:
+        <input type="text" name="fname">
+        <input type="reset" value="Reset">
+    </form>
+    <hr>
+    <!--------------------------------------------------------------->
+    <p>Event for oncontextmenu:</p>
+    <div id="forOncontextmenu" oncontextmenu="functionForOncontextmenu()">Please, press right key of mouse one time!</div>
+    <hr>
+    <!--------------------------------------------------------------->
+    <p>Event for ondoubleclick (ondblclick):</p>
+    <div id="forOndblclick" ondblclick="functionForOndblclick()">Please, create double-click in this div element!</div>
+    <span id="someMessage"></span>
+    <hr>
+    <!--------------------------------------------------------------->
+    <p>Event for onfocus:</p>
+    <input type="text" onfocus="fuctionForOnfocus(this)" placeholder="Please, create one-click!">
+    <!--------------------------------------------------------------->
+    <script src="script.js"></script>
+</body>
+
+</html>

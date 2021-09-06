@@ -1,0 +1,25 @@
+p {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#forOnscroll {
+    border: 1px solid black;
+    width: 150px;
+    height: 300px;
+    overflow: scroll;
+}
+
+#forOncontextmenu {
+    border: 1px solid black;
+    background-color: limegreen;
+    width: 500px;
+    height: min-content;
+}
+
+#forOndblclick {
+    border: 1px solid black;
+    background-color: aquamarine;
+    width: 500px;
+    height: min-content;
+}
