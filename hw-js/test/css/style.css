@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.general-block {
+    border: 2px solid rgb(0,0,0);
+    background-color: aqua;
+    height: 350px;
+    width: 600px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#operator-btn {
+    width: min-content;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.individual-operator {
+    margin: 25px;
+}
+
+.style-operator {
+    margin: 20px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+h2, p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.for-input {
+    width: min-content;
+    margin: 0 auto;
+}
+
+input {
+    margin-bottom: 30px;
+}
