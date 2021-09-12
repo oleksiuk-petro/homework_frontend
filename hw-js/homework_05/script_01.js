@@ -26,3 +26,26 @@
         buffer.add(0);
         console.log (buffer.print()); // '010'
 */
+
+function makeBuffer() {
+    var text = '';
+    
+    return function (whichValue) {
+        if (arguments.length == 0) {
+            return text;
+        }
+        text += whichValue;
+    };
+};
+
+var buffer1 = makeBuffer();
+buffer1('JavaScript ');
+buffer1('Вчити ');
+buffer1('Потрібно! ');
+console.log(buffer1());
+
+var buffer2 = makeBuffer();
+buffer2(0);
+buffer2(1);
+buffer2(0);
+console.log(buffer2());
