@@ -2,4 +2,13 @@
     .footer-text {
         flex-wrap: wrap;
     }
+
+    .main-text__article {
+        width: 645px;
+        margin-right: 12px;
+    }
+
+    .main-text__aside {
+        margin-left: 12px;
+    }
 }
