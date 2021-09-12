@@ -1,4 +1,4 @@
-<!-- 
+/*
     Написати код в якому:
     
     Реалізувати у функціональному та прототипному стилі наступне задання: 
@@ -16,18 +16,43 @@
     Циклом for пройтись по всіх елементах масиву і викликати в кожного метод work().
     
     Всі виводи проводити на консоль.
- -->
+*/
 
- <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>homework_06</title>
- </head>
- <body>
-     <!-- <script src="script_funct.js"></script> -->
-     <!-- <script src="script_proto.js"></script> -->
- </body>
- </html>
+function Robot(message) {
+    this.message = message;
+    this.work = function () {
+        console.log(this.message);
+        return this.message;
+    };
+}
+
+function CoffeeRobot(message) {
+    Robot.call(this);
+    this.message = message;
+}
+
+function RobotDancer(message) {
+    Robot.call(this);
+    this.message = message;
+}
+
+function RobotCooker(message) {
+    Robot.call(this);
+    this.message = message;
+}
+
+let robot = new Robot('Я Robot - я просто працюю');
+let cofeeRobot = new CoffeeRobot('Я CoffeRobot – я варю каву');
+let robotDancer = new RobotDancer('Я RobotDancer – я просто танцюю');
+let robotCoocker = new RobotCooker('Я RobotCoocker – я просто готую');
+
+let arrayRobot = new Array();
+
+arrayRobot.push(robot);
+arrayRobot.push(cofeeRobot);
+arrayRobot.push(robotDancer);
+arrayRobot.push(robotCoocker);
+
+for (let i = 0; i < arrayRobot.length; i++) {
+    arrayRobot[i].work();
+}
