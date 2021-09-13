@@ -1,9 +1,16 @@
-@media screen and (min-width: 1024px) and (max-width: 1170px) {
+@media screen and (min-width: 1024px) and (max-width: 1169px) {
     .head-line {
         border-bottom: none;
     }
     .main-text {
         flex-direction: column-reverse;
+        font-size: 15px;
+    }
+    .main-text h2 {
+        font-size: 27px;
+    }
+    .main-text h3 {
+        font-size: 22px;
     }
     .main-text__aside {
         width: auto;
@@ -26,5 +33,13 @@
     }
     .footer-text {
         flex-wrap: wrap;
+    }
+    .footer-text__details {
+        width: 338px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .footer-text__details:nth-child(3) {
+        width: 366px;
     }
 }

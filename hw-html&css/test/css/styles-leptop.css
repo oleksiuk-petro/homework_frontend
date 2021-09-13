@@ -1,14 +1,30 @@
-@media screen and (min-width: 1170px) and (max-width: 1280px) {
+@media screen and (min-width: 1170px) and (max-width: 1279px) {
+    .main-text {
+        font-size: 15px;
+    }
+    .main-text h2 {
+        font-size: 27px;
+    }
+    .main-text h3 {
+        font-size: 22px;
+    }
+    .main-text__article {
+        width: 642px;
+        margin-right: 12px;
+    }
+    .main-text__aside {
+        width: 387px;
+        margin-left: 12px;
+    }
     .footer-text {
         flex-wrap: wrap;
     }
-
-    .main-text__article {
-        width: 645px;
-        margin-right: 12px;
+    .footer-text__details {
+        width: 338px;
+        margin-left: 25px;
+        margin-right: 25px;
     }
-
-    .main-text__aside {
-        margin-left: 12px;
+    .footer-text__details:nth-child(3) {
+        width: 366px;
     }
 }

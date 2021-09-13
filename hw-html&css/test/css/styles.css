@@ -76,7 +76,7 @@ table {
     margin-top: 90px;
 }
 
-.head-text__logo::first-letter {
+.head-text__logo h1::first-letter {
     font-size: 1.5em;
 }
 
@@ -98,6 +98,7 @@ table {
     height: 100%;
     font-family: "SourceSansPro";
     font-size: 17px;
+    font-weight: bold;
     padding: 12px 20px;
     margin-left: 20px;
     margin-right: 20px;
@@ -240,20 +241,21 @@ section p {
 }
 
 .footer-text__details {
-    width: 340px;
-    margin-left: 39px;
-    margin-right: 39px;
+    width: 332px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .footer-text__details:nth-child(3) {
-    width: 366px;
+    width: 360px;
 }
 
 .footer-text__details h2 {
     text-align: left;
     font-size: 27px;
+    font-weight: bold;
     color: rgb(255, 255, 255);
-    padding-top: 43px;
+    padding-top: 15px;
     padding-bottom: 25px;
 }
 
@@ -282,7 +284,7 @@ section p {
 }
 
 .social img {
-    width: 50px;
+    width: 54px;
     height: auto;
 }
 

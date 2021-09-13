@@ -1,3 +1,10 @@
-@media screen and (min-width: 1280px) {
-    
+@media screen and (min-width: 1280px) and (max-width: 1857px) {
+    .main-text__article {
+        width: 665px;
+        margin-right: 20px;
+    }
+    .main-text__aside {
+        width: 382px;
+        margin-left: 20px;
+    }
 }

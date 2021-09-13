@@ -1,9 +1,20 @@
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .head-line {
         border-bottom: none;
     }
+    .head-text__nav-menu {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
     .main-text {
         flex-direction: column-reverse;
+        font-size: 15px;
+    }
+    .main-text h2 {
+        font-size: 27px;
+    }
+    .main-text h3 {
+        font-size: 22px;
     }
     .main-text__aside {
         width: auto;
@@ -27,5 +38,8 @@
     }
     .footer-text__details {
         margin: 0 auto;
+    }
+    .footer-text__details:nth-child(3) {
+        width: 366px;
     }
 }

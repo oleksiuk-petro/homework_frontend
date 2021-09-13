@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px) and (max-width: 768px) {
+@media screen and (min-width: 600px) and (max-width: 767px) {
     .head-navigation {
         margin: 0;
     }
@@ -7,19 +7,26 @@
     }
     .head-text__nav-menu {
         width: 580px;
-        height: 100%;
+        height: auto;
         font-family: "SourceSansPro";
-        font-size: 17px;
+        font-size: 20px;
         text-align: center;
-        font-weight: 800;
-        padding: 12px 0;
-        margin: 0 auto;
+        font-weight: 700;
+        padding: 10px 0;
+        margin: 10px auto;
     }
     .head-line {
         border-bottom: none;
     }
     .main-text {
         flex-direction: column-reverse;
+        font-size: 15px;
+    }
+    .main-text h2 {
+        font-size: 27px;
+    }
+    .main-text h3 {
+        font-size: 22px;
     }
     .main-text__aside {
         width: auto;
@@ -43,5 +50,8 @@
     }
     .footer-text__details {
         margin: 0 auto;
+    }
+    .footer-text__details:nth-child(3) {
+        width: 366px;
     }
 }
