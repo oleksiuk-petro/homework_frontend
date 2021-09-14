@@ -382,17 +382,18 @@ select {
     font-family: "ArialBold";
     font-size: 18px;
     color: #000000;
+    margin-left: 5px;
+    margin-bottom: 10px;
 }
 
 .example-art p {
     font-family: "ArialRegular";
-    font-size: 14px;
-    /* line-height: 2; */
+    font-size: 13px;
+    line-height: 1.5;
 }
 
 .example-art a {
     font-family: "ArialRegular";
-    font-size: 14px;
     color: rgb(170, 33, 43);
     text-decoration: underline;
 }
@@ -401,12 +402,13 @@ select {
     width: 176px;
     height: auto;
     float: left;
-    margin-right: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
-/* .image-bl img {
-    box-shadow: 5px 7px 5px 0px rgba(0, 0, 0, 0.2);
-} */
+.image-bl img {
+    width: 100%;
+}
 
 /*for "Lists"*/
 
@@ -416,8 +418,9 @@ select {
 }
 
 .list-prev {
-    width: 225px;
+    width: 205px;
     float: left;
+    margin-right: 5px;
     margin-bottom: 30px;
 }
 
@@ -430,28 +433,36 @@ select {
 
 .list-art p {
     font-family: "ArialRegular";
-    font-size: 20px;
+    font-size: 13px;
+    font-weight: 600;
     color: rgb(92, 100, 110);
 }
 
 .list-art p span {
     font-size: 12px;
+    font-weight: 100;
     background: rgb(222, 222, 222);
 }
 
 .list-art ul {
     font-family: "ArialRegular";
-    font-size: 14px;
-    line-height: 2;
-    margin-left: 20px;
+    font-size: 13px;
+    line-height: 1.5;
+    list-style-position: inside;
 }
 
 .list-art ol {
-    float: right;
+    float: left;
     font-family: "ArialRegular";
-    font-size: 14px;
-    line-height: 2;
+    font-size: 13px;
+    line-height: 1.5;
+    list-style-position: inside;
 }
+
+.list-art li span {
+    position: relative;
+    left: -8px;
+  }
 
 .list-art h2:first-letter {
     color: rgb(174, 75, 93);
@@ -471,7 +482,7 @@ select {
 .table-art {
     display: block;
     float: left;
-    width: 95%;
+    width: 100%;
 }
 
 .table-art h2 {
@@ -497,6 +508,10 @@ table tr:nth-child(1) {
     font-family: "ArialRegular";
     font-size: 12px;
     color: #ffffff;
+}
+
+table th:first-child, table td:first-child {
+    width: 43px;
 }
 
 table tr:nth-child(1) th:first-child {
@@ -527,31 +542,34 @@ table {
 }
 
 table td, th {
-    height: 47px;
+    height: 32px;
 }
 
 /*for footer*/
 
 footer {
     background: rgb(48, 54, 64);
-    border-top: 20px solid rgb(156, 71, 87);
+    border-top: 10px solid rgb(156, 71, 87);
     overflow: hidden;
 }
 
 .foot-container {
     margin: 0 auto;
     text-align: left;
-    width: 905px;
+    width: 890px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .foot-container section {
-    width: 235px;
-    float: left;
+    width: 246px;
+    /* float: left; */
     color: rgb(165, 173, 184);
     font-family: "ArialRegular";
     font-size: 12px;
     line-height: 2;
-    padding-left: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .foot-container section a {
@@ -560,7 +578,7 @@ footer {
 
 .foot-container h3 {
     border-bottom: 1px solid rgb(25, 28, 32);
-    width: 235px;
+    width: 100%;
     margin-top: 10px;
     font-size: 18px;
     font-family: "ArialRegular";
@@ -598,6 +616,7 @@ footer {
 
 .city-art ul {
     border-top: 1px solid rgb(64, 71, 79);
+    list-style-position: inside;
 }
 
 .city-art ul li::marker {
