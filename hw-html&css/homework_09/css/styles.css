@@ -26,35 +26,32 @@ a {
 
 body {
     font-family: "ArialRegular";
-    background: #808080;
-    /* min-width: 320px; */
+    background: rgb(128, 128, 128);
     color: rgb(92, 100, 110);
     text-align: center;
 }
 
-/* header styles */
+/* styles for "header" */
 
 header .top-container {
     background: rgb(48, 54, 64);
     width: 100%;
     padding-top: 18px;
     padding-bottom: 12px;
-    /* height: 67px; */
 }
 
 header .logo-box {
     margin: 0 auto;
     width: 890px;
-    /* padding: 8px; */
     overflow: hidden;
 }
 
+/* styles for "CHERRY" */
 header .logo {
     font-family: "ArialBold";
     font-size: 10px;
     color: rgb(165, 173, 184);
     float: left;
-    /* width: 70%; */
     text-align: left;
     margin-left: 8px;
 }
@@ -68,7 +65,7 @@ header .logo h1::first-letter {
     color: rgb(174, 75, 93);
 }
 
-/*for "Search..."*/
+/* styles for "Search... " */
 
 header .search-form {
     width: 225px;
@@ -81,7 +78,6 @@ header .search-form {
 header .search-form .submit-btn {
     height: 35px;
     width: 35px;
-    /* min-width: 15%; */
     border-radius: 5px;
     border: none;
     background: rgb(174, 75, 93) url("../images/search.svg") no-repeat center;
@@ -102,22 +98,21 @@ input[type="search"] {
     outline: none;
     background: rgb(36, 39, 45);
     width: 180px;
-    /* min-width: 70%; */
     height: 35px;
     border-radius: 5px;
-    border: 1px solid grey;
+    border: 1px solid rgb(128,128,128);
     font-family: "ArialRegular";
     font-size: 14px;
-    color: #656f7a;
+    color: rgb(101,111,122);
     padding: 7px;
 }
 
 input[type="search"]:hover {
     outline: none;
-    background: #ffffff;
+    background: rgb(255,255,255);
 }
 
-/*for "Eaten berry"*/
+/* styles for "Eaten berry" */
 
 header .content {
     margin: 0 auto;
@@ -127,8 +122,7 @@ header .content {
 
 .slide {
     width: 100%;
-    /* height: 217px; */
-    background: url(../images/header.jpg);
+    background: url("../images/header.jpg");
     position: relative;
     outline: none;
 }
@@ -162,7 +156,7 @@ header .content {
 
 .under-weather {
     font-size: 14px;
-    color: #ffffff;
+    color: rgb(255,255,255);
     text-align: left;
 }
 
@@ -183,7 +177,7 @@ header .content {
     left: 5%;
 }
 
-/* basic menu styles */
+/* styles for navigation menu */
 
 .block-menu {
     display: block;
@@ -196,7 +190,7 @@ header .content {
 }
 
 .block-menu li a {
-    color: #ffffff;
+    color: rgb(255, 255, 255);
     display: block;
     text-decoration: none;
     font-family: "ArialBold";
@@ -207,6 +201,8 @@ header .content {
     font-size: 15px;
     padding: 7px 20px;
 }
+
+/* styles for "Home / Another page ... " */
 
 header .crumbs {
     background: rgb(243, 243, 243);
@@ -228,7 +224,7 @@ header .crumbs {
     content: '/';
     margin-left: 2px;
     margin-right: 2px;
-    color: #808080;
+    color: rgb(128, 128, 128);
 }
 
 .crumbs .breadcrumbs li:first-child::before {
@@ -251,16 +247,17 @@ header .crumbs {
     font-size: 11px;
 }
 
-/* main styles */
+/* styles for "main" */
 
 main .main-content {
-    background: #ffffff;
+    background: rgb(255,255,255);
     margin: 0 auto;
-    /* max-width: 980px; */
     width: 890px;
     text-align: left;
     overflow: hidden;
 }
+
+/* styles for "Contact us" */
 
 aside {
     width: 194px;
@@ -271,63 +268,69 @@ aside {
 
 .data {
     background: rgb(243, 243, 243);
-    width: 100%;
-    text-align: center;
-    border: 1px solid #c0c0c0;
+    border: 1px solid rgb(192,192,192);
+    padding-top: 16px;
+    padding-right: 13px;
+    padding-left: 11px;
     margin-bottom: 30px;
 }
 
 .data h3 {
+    width: 100%;
     font-family: "ArialBold";
     font-size: 18px;
-    color: #000000;
+    color: rgb(0,0,0);
     text-align: left;
-    margin-left: 20px;
-    margin-top: 15px;
+    margin-bottom: 17px;
 }
 
 .sidebar-btn {
-    background: rgb(227, 228, 229);
-    width: 170px;
-    height: 20px;
+    background: rgb(227, 228, 230);
+    width: 100%;
+    height: 30px;
     border-radius: 5px;
-    border: 1px solid #c0c0c0;
+    border: 1px solid rgb(255, 255, 255);
     font-family: "ArialRegular";
-    font-size: 14px;
-    color: #656f7a;
-    padding: 7px;
+    font-size: 13px;
     margin-bottom: 15px;
+}
+
+.sidebar-btn::placeholder {
+    padding-left: 9px;
+    font-size: 13px;
 }
 
 select {
-    background: rgb(227, 228, 229);
-    width: 190px;
-    height: 35px;
+    width: 100%;
+    height: 30px;
     border-radius: 5px;
     font-family: "ArialRegular";
-    font-size: 14px;
-    color: #656f7a;
+    font-size: 13px;
+    color: rgb(101,111,122);
+    padding-left: 9px;
     margin-bottom: 15px;
+    appearance: none;
+    background: url("../images/triangle.png") no-repeat right;
+    background-color: rgb(227, 228, 230);
 }
 
 .submit-btn-forma {
+    width: 160px;
     margin-bottom: 30px;
     font-family: "ArialRegular";
-    font-size: 16px;
-    color: #ffffff;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
     background: rgb(170, 33, 43);
-    border: 5px solid #ffffff;
+    border: 5px solid rgb(255, 255, 255);
     height: 45px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 15px;
-    padding-top: 10px;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .submit-btn-forma:active {
     background: rgb(232, 95, 76);
 }
+
+/* styles for "Headline" */
 
 .headline {
     width: 210px;
@@ -350,7 +353,7 @@ select {
 .headline h3 {
     font-family: "ArialBold";
     font-size: 18px;
-    color: #000000;
+    color: rgb(0, 0, 0);
 }
 
 .inform-block {
@@ -360,7 +363,7 @@ select {
     float: right;
 }
 
-/*for "What We Do..."*/
+/* styles for "What we Do ... "*/
 
 .example-art {
     width: 100%;
@@ -381,8 +384,8 @@ select {
 .example-art h3 {
     font-family: "ArialBold";
     font-size: 18px;
-    color: #000000;
-    margin-left: 5px;
+    color: rgb(0, 0, 0);
+    margin-left: 3px;
     margin-bottom: 10px;
 }
 
@@ -398,11 +401,13 @@ select {
     text-decoration: underline;
 }
 
+/* styles for images "Admin panel ..." */
+
 .image-bl {
     width: 176px;
     height: auto;
     float: left;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-right: 10px;
 }
 
@@ -410,11 +415,12 @@ select {
     width: 100%;
 }
 
-/*for "Lists"*/
+/* styles for "Lists" */
 
 .list-art {
     width: 100%;
     float: left;
+    margin-top: 10px;
 }
 
 .list-prev {
@@ -451,6 +457,10 @@ select {
     list-style-position: inside;
 }
 
+.additional-indent {
+    margin-left: 8px;
+}
+
 .list-art ol {
     float: left;
     font-family: "ArialRegular";
@@ -462,14 +472,19 @@ select {
 .list-art li span {
     position: relative;
     left: -8px;
-  }
+}
 
 .list-art h2:first-letter {
     color: rgb(174, 75, 93);
 }
 
-.dot {
-    margin-left: 30px;
+.dot-1 {
+    margin-left: 16px;
+    list-style-type: disc;
+}
+
+.dot-2 {
+    margin-left: 8px;
     list-style-type: disc;
 }
 
@@ -477,7 +492,7 @@ select {
     list-style-type: none;
 }
 
-/*for "Table*/
+/* styles for "Table" */
 
 .table-art {
     display: block;
@@ -506,12 +521,18 @@ table tr {
 table tr:nth-child(1) {
     background: rgb(156, 71, 87);
     font-family: "ArialRegular";
-    font-size: 12px;
-    color: #ffffff;
+    color: rgb(255,255,255);
+}
+
+table td {
+    text-align: left;
+    padding-left: 12px;
 }
 
 table th:first-child, table td:first-child {
     width: 43px;
+    text-align: center;
+    padding-left: 0;
 }
 
 table tr:nth-child(1) th:first-child {
@@ -545,7 +566,7 @@ table td, th {
     height: 32px;
 }
 
-/*for footer*/
+/* styles for "footer" */
 
 footer {
     background: rgb(48, 54, 64);
@@ -563,10 +584,9 @@ footer {
 
 .foot-container section {
     width: 246px;
-    /* float: left; */
     color: rgb(165, 173, 184);
     font-family: "ArialRegular";
-    font-size: 12px;
+    font-size: 11px;
     line-height: 2;
     margin-left: 5px;
     margin-right: 5px;
@@ -584,7 +604,7 @@ footer {
     font-family: "ArialRegular";
 }
 
-/*for "CHERRY Hours"*/
+/* styles for "CHERRY Hours" */
 
 .hour-art {
     margin-right: 25px;
@@ -599,11 +619,16 @@ footer {
 }
 
 .hour-art ul {
-    list-style-image: url("../images/time.svg");
-    list-style-position: inside;
+    list-style-type: none;
 }
 
-/*for "Local CHERRY"*/
+.svg-prop {
+    background-color: rgb(174, 75, 93);
+    border-radius: 8px;
+    margin-right: 7px;
+}
+
+/* styles for "Local CHERRY" */
 
 .city-art {
     margin-left: 25px;
@@ -636,7 +661,7 @@ footer {
     text-decoration: underline;
 }
 
-/*for "Our Los Angeles Location"*/
+/* styles for "Our Los Angeles Location" */
 
 .contact-art {
     margin-left: 25px;
