@@ -7,12 +7,12 @@
 
 @font-face {
     font-family: "ArialBold";
-    src: url(../fonts/ArialBold.ttf);
+    src: url("../fonts/ArialBold.ttf");
 }
 
 @font-face {
     font-family: "ArialRegular";
-    src: url(../fonts/ArialRegular.ttf);
+    src: url("../fonts/ArialRegular.ttf");
 }
 
 a:hover, a {
@@ -33,21 +33,22 @@ body {
 
 /* styles for "header" */
 
-header .top-container {
+.top-container {
     background: rgb(48, 54, 64);
     width: 100%;
     padding-top: 18px;
     padding-bottom: 12px;
 }
 
-header .logo-box {
+.logo-box {
     margin: 0 auto;
     width: 890px;
     overflow: hidden;
 }
 
 /* styles for "CHERRY" */
-header .logo {
+
+.logo {
     font-family: "ArialBold";
     font-size: 10px;
     color: rgb(165, 173, 184);
@@ -56,18 +57,18 @@ header .logo {
     margin-left: 8px;
 }
 
-header .logo h1 {
+.cherry-style {
     font-size: 20px;
     text-transform: uppercase;
 }
 
-header .logo h1::first-letter {
+.cherry-style::first-letter {
     color: rgb(174, 75, 93);
 }
 
 /* styles for "Search... " */
 
-header .search-form {
+.search-form {
     width: 225px;
     float: right;
     outline: none;
@@ -75,7 +76,25 @@ header .search-form {
     margin-right: 8px;
 }
 
-header .search-form .submit-btn {
+.search-btn {
+    outline: none;
+    background: rgb(36, 39, 45);
+    width: 180px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid rgb(128, 128, 128);
+    font-family: "ArialRegular";
+    font-size: 14px;
+    color: rgb(101, 111, 122);
+    padding: 7px;
+}
+
+.search-btn:hover {
+    outline: none;
+    background: rgb(255, 255, 255);
+}
+
+.submit-btn {
     height: 35px;
     width: 35px;
     border-radius: 5px;
@@ -83,38 +102,17 @@ header .search-form .submit-btn {
     background: rgb(174, 75, 93) url("../images/search.svg") no-repeat center;
     text-indent: -99999px;
     margin-left: 5px;
-}
-
-header .search-form .submit-btn:hover {
-    background: rgb(232, 95, 76) url("../images/search.svg") no-repeat center;
-}
-
-input[type="submit"] {
     outline: none;
     cursor: pointer;
 }
 
-input[type="search"] {
-    outline: none;
-    background: rgb(36, 39, 45);
-    width: 180px;
-    height: 35px;
-    border-radius: 5px;
-    border: 1px solid rgb(128,128,128);
-    font-family: "ArialRegular";
-    font-size: 14px;
-    color: rgb(101,111,122);
-    padding: 7px;
-}
-
-input[type="search"]:hover {
-    outline: none;
-    background: rgb(255,255,255);
+.submit-btn:hover {
+    background: rgb(232, 95, 76) url("../images/search.svg") no-repeat center;
 }
 
 /* styles for "Eaten berry" */
 
-header .content {
+.content {
     margin: 0 auto;
     max-width: 890px;
     overflow: hidden;
@@ -134,16 +132,25 @@ header .content {
     padding-bottom: 35px;
 }
 
-.slide .text h2 {
+.eaten-berry {
     font-family: "ArialBold";
     color: rgb(165, 172, 182);
     font-size: 24px;
     text-align: left;
 }
 
-.slide .text h2:first-letter {
+.eaten-berry:first-letter {
     font-family: "ArialBold";
     color: rgb(174, 75, 93);
+}
+
+.eaten-berry:after {
+    content: 'and go for a walk';
+    display: block;
+    font-family: "ArialBold";
+    font-size: 18px;
+    color: rgb(37, 42, 48);
+    margin-bottom: 15px;
 }
 
 .weather {
@@ -156,20 +163,11 @@ header .content {
 
 .under-weather {
     font-size: 14px;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     text-align: left;
 }
 
-.slide .text h2:after {
-    content: 'and go for a walk';
-    display: block;
-    font-family: "ArialBold";
-    font-size: 18px;
-    color: rgb(37, 42, 48);
-    margin-bottom: 15px;
-}
-
-.cherry-slider .slide .text {
+.cherry .slide .text {
     position: absolute;
     width: 50%;
     top: 10%;
@@ -185,7 +183,7 @@ header .content {
     background: rgb(149, 22, 31);
 }
 
-.block-menu li {
+.white-menu {
     display: inline-block;
 }
 
@@ -194,7 +192,6 @@ header .content {
     display: block;
     text-decoration: none;
     font-family: "ArialBold";
-    -webkit-font-smoothing: antialiased;
     text-transform: capitalize;
     overflow: visible;
     line-height: 20px;
@@ -204,44 +201,44 @@ header .content {
 
 /* styles for "Home / Another page ... " */
 
-header .crumbs {
+.crumbs {
     background: rgb(243, 243, 243);
     width: 100%;
     text-align: left;
 }
 
-.crumbs .breadcrumbs {
+.breadcrumbs {
     font-family: "ArialRegular";
     margin-left: 20px;
     padding-bottom: 5px;
 }
 
-.crumbs .breadcrumbs li {
+.small-menu {
     display: inline-block;
 }
 
-.crumbs .breadcrumbs li::before {
+.small-menu::before {
     content: '/';
     margin-left: 2px;
     margin-right: 2px;
     color: rgb(128, 128, 128);
 }
 
-.crumbs .breadcrumbs li:first-child::before {
+.small-menu:first-child::before {
     content: '';
 }
 
-.crumbs .breadcrumbs li a {
+.home-page {
     font-size: 11px;
     font-weight: 700;
     color: rgb(156, 71, 87);
 }
 
-.crumbs .breadcrumbs li a:hover {
+.home-page:hover {
     text-decoration: underline;
 }
 
-.breadcrumbs .current {
+.current {
     color: rgb(107, 111, 116);
     font-weight: 700;
     font-size: 11px;
@@ -249,8 +246,8 @@ header .crumbs {
 
 /* styles for "main" */
 
-main .main-content {
-    background: rgb(255,255,255);
+.main-content {
+    background: rgb(255, 255, 255);
     margin: 0 auto;
     width: 890px;
     text-align: left;
@@ -259,7 +256,7 @@ main .main-content {
 
 /* styles for "Contact us" */
 
-aside {
+.side-information {
     width: 194px;
     margin-left: 20px;
     margin-top: 18px;
@@ -268,18 +265,18 @@ aside {
 
 .data {
     background: rgb(243, 243, 243);
-    border: 1px solid rgb(192,192,192);
+    border: 1px solid rgb(192, 192, 192);
     padding-top: 16px;
     padding-right: 13px;
     padding-left: 11px;
     margin-bottom: 30px;
 }
 
-.data h3 {
+.contact-us {
     width: 100%;
     font-family: "ArialBold";
     font-size: 18px;
-    color: rgb(0,0,0);
+    color: rgb(0, 0, 0);
     text-align: left;
     margin-bottom: 17px;
 }
@@ -300,13 +297,13 @@ aside {
     font-size: 13px;
 }
 
-select {
+.problem-brand {
     width: 100%;
     height: 30px;
     border-radius: 5px;
     font-family: "ArialRegular";
     font-size: 13px;
-    color: rgb(101,111,122);
+    color: rgb(101, 111, 122);
     padding-left: 9px;
     margin-bottom: 15px;
     appearance: none;
@@ -336,25 +333,29 @@ select {
     width: 210px;
 }
 
-.headline p {
-    font-family: "ArialRegular";
-    font-size: 12px;
+.black-bold {
+    font-family: "ArialBold";
+    font-size: 18px;
+    color: rgb(0, 0, 0);
     padding-right: 5px;
-    line-height: 2;
+    line-height: 1.5;
 }
 
-.headline a {
+.general-text {
+    font-family: "ArialRegular";
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.reference-text {
     font-family: "ArialRegular";
     font-size: 12px;
     color: rgb(170, 33, 43);
     text-decoration: underline;
+    padding-top: 5px;
 }
 
-.headline h3 {
-    font-family: "ArialBold";
-    font-size: 18px;
-    color: rgb(0, 0, 0);
-}
+/* styles for big right block */
 
 .inform-block {
     width: 630px;
@@ -370,35 +371,15 @@ select {
     float: left;
 }
 
-.example-art h2 {
+.beautiful-letters {
     font-family: "ArialBold";
     font-size: 24px;
     color: rgb(165, 173, 184);
     margin-bottom: 10px;
 }
 
-.example-art h2:first-letter {
+.beautiful-letters:first-letter {
     color: rgb(174, 75, 93);
-}
-
-.example-art h3 {
-    font-family: "ArialBold";
-    font-size: 18px;
-    color: rgb(0, 0, 0);
-    margin-left: 3px;
-    margin-bottom: 10px;
-}
-
-.example-art p {
-    font-family: "ArialRegular";
-    font-size: 13px;
-    line-height: 1.5;
-}
-
-.example-art a {
-    font-family: "ArialRegular";
-    color: rgb(170, 33, 43);
-    text-decoration: underline;
 }
 
 /* styles for images "Admin panel ..." */
@@ -411,7 +392,7 @@ select {
     margin-right: 10px;
 }
 
-.image-bl img {
+.main-picture {
     width: 100%;
 }
 
@@ -430,27 +411,20 @@ select {
     margin-bottom: 30px;
 }
 
-.list-art h2 {
-    font-family: "ArialBold";
-    font-size: 24px;
-    color: rgb(165, 173, 184);
-    margin-bottom: 10px;
-}
-
-.list-art p {
+.about-tags {
     font-family: "ArialRegular";
     font-size: 13px;
     font-weight: 600;
     color: rgb(92, 100, 110);
 }
 
-.list-art p span {
+.bgnd-tag {
     font-size: 12px;
     font-weight: 100;
     background: rgb(222, 222, 222);
 }
 
-.list-art ul {
+.general-lists {
     font-family: "ArialRegular";
     font-size: 13px;
     line-height: 1.5;
@@ -461,29 +435,12 @@ select {
     margin-left: 8px;
 }
 
-.list-art ol {
-    float: left;
-    font-family: "ArialRegular";
-    font-size: 13px;
-    line-height: 1.5;
-    list-style-position: inside;
-}
-
-.list-art li span {
-    position: relative;
-    left: -8px;
-}
-
-.list-art h2:first-letter {
-    color: rgb(174, 75, 93);
-}
-
-.dot-1 {
+.dot-first {
     margin-left: 16px;
     list-style-type: disc;
 }
 
-.dot-2 {
+.dot-second {
     margin-left: 8px;
     list-style-type: disc;
 }
@@ -500,75 +457,61 @@ select {
     width: 100%;
 }
 
-.table-art h2 {
-    font-family: "ArialBold";
-    font-size: 24px;
-    color: rgb(165, 173, 184);
-    margin-bottom: 10px;
+.black-table {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-.table-art h2:first-letter {
-    color: rgb(174, 75, 93);
-}
-
-table tr {
+.table-row {
+    height: 32px;
     background: black;
     color: rgb(165, 173, 184);
     font-family: "ArialRegular";
     font-size: 12px;
 }
 
-table tr:nth-child(1) {
+.table-row:nth-child(1) {
     background: rgb(156, 71, 87);
     font-family: "ArialRegular";
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
 }
 
-table td {
+.table-column {
     text-align: left;
     padding-left: 12px;
 }
 
-table th:first-child, table td:first-child {
+.first-column:first-child, 
+.table-column:first-child {
     width: 43px;
     text-align: center;
     padding-left: 0;
 }
 
-table tr:nth-child(1) th:first-child {
+.table-row:nth-child(1) .first-column:first-child {
     border-radius: 5px 0px 0px 0px;
 }
 
-table tr:nth-child(1) th:last-child {
+.table-row:nth-child(1) .first-column:last-child {
     border-radius: 0px 5px 0px 0px;
 }
 
-table tr:last-child td:first-child {
+.table-row:last-child .table-column:first-child {
     border-radius: 0px 0px 0px 5px;
 }
 
-table tr:last-child td:last-child {
+.table-row:last-child .table-column:last-child {
     border-radius: 0px 0px 5px 0px;
 }
 
-table tr a {
+.ref-table {
     color: rgb(156, 71, 87);
     text-decoration: underline;
 }
 
-table {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-table td, th {
-    height: 32px;
-}
-
 /* styles for "footer" */
-
-footer {
+.black-footer {
     background: rgb(48, 54, 64);
     border-top: 10px solid rgb(156, 71, 87);
     overflow: hidden;
@@ -582,7 +525,7 @@ footer {
     justify-content: space-between;
 }
 
-.foot-container section {
+.gen-section {
     width: 246px;
     color: rgb(165, 173, 184);
     font-family: "ArialRegular";
@@ -592,16 +535,17 @@ footer {
     margin-right: 5px;
 }
 
-.foot-container section a {
-    color: rgb(165, 173, 184);
-}
-
-.foot-container h3 {
+.nice-letters {
     border-bottom: 1px solid rgb(25, 28, 32);
     width: 100%;
     margin-top: 10px;
     font-size: 18px;
     font-family: "ArialRegular";
+    border-bottom: 1px solid rgb(64, 71, 79);
+}
+
+.ref-footer {
+    color: rgb(165, 173, 184);
 }
 
 /* styles for "CHERRY Hours" */
@@ -610,15 +554,11 @@ footer {
     margin-right: 25px;
 }
 
-.hour-art p {
-    border-top: 1px solid rgb(64, 71, 79);
-}
-
-.hour-art h3:first-letter {
+.hour-art .nice-letters:first-letter {
     color: rgb(174, 75, 93);
 }
 
-.hour-art ul {
+.list-with-clock {
     list-style-type: none;
 }
 
@@ -635,29 +575,28 @@ footer {
     margin-right: 25px;
 }
 
-.city-art span {
+.second-letter {
     color: rgb(174, 75, 93);
 }
 
-.city-art ul {
-    border-top: 1px solid rgb(64, 71, 79);
+.red-dot-list {
     list-style-position: inside;
 }
 
-.city-art ul li::marker {
+.marker-red::marker {
     color: rgb(156, 71, 87);
 }
 
-.city-art ul li a:hover {
+.marker-red:hover {
     text-decoration: underline;
 }
 
-.city-art p {
+.call-me {
     font-family: "ArialBold";
     font-size: 14px;
 }
 
-.city-art p a:hover {
+.call-number:hover {
     text-decoration: underline;
 }
 
@@ -667,16 +606,12 @@ footer {
     margin-left: 25px;
 }
 
-.contact-art ul {
+.angeles-list {
     border-top: 1px solid rgb(64, 71, 79);
     list-style-type: none;
 }
 
-.contact-art ul li a:hover {
-    text-decoration: underline;
-}
-
-.contact-art ul .cherry {
+.cherry-email {
     color: rgb(156, 71, 87);
     text-decoration: underline;
 }
